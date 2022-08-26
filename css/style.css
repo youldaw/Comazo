@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'Ubuntu', sans-serif;
+}
+a,p,h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  text-decoration: none;
+  line-height: 1.2;
+}
+button:focus,
+textarea:focus,
+select:focus {
+  outline: none !important;
+  -webkit-appearance: none;
+  box-shadow: none;
+}
+input:focus {
+  outline: none !important;
+}
+a:active,
+a:focus {
+  outline: 0;
+  outline: none !important;
+  border: none;
+}
+a:-webkit-any-link:focus-visible {
+  outline-offset: unset;
+}
+:focus-visible {
+  outline: none;
+}
+a {
+  display: inline-block;
+  transition: 0.3s all ease;
+  text-decoration: none;
+}
+a:hover {
+  color: inherit;
+}
+input,
+button,
+img {
+  transition: 0.3s all ease;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+.owl-drag {
+  overflow: hidden;
+}
+.owl-item {
+  float: left;
+}
+.owl-dots {
+  display: none;
+}
+
+/* ========== Breadcrumbs ============== */
+.bread-crumbs {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.bread-crumbs a,
+.bread-crumbs span,
+.bread-crumbs p {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: capitalize;
+  color: #696969;
+}
+.bread-crumbs span {
+  margin: 0 6px;
+}
+.bread-crumbs a:hover {
+  color: #000;
+}
+/* ========== End Breadcrumbs ============== */
+main {
+  padding-top: 50px;
+}
+
+
+.header-top {
+  background: #1B3B58;
+  padding: 5px 8px;
+}
+.header-top span {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+}
+.header-top.second {
+  border-top: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-top.owl-drag {
+  overflow: visible;
+}
+.header-top .owl-nav {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+  background: #1B3B58;
+  padding-top: 100px;
+}
+
+footer .ftr-menu {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+footer .ftr-menu p {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: -0.333333px;
+  color: #FFFFFF;
+  margin-bottom: 25px;
+}
+footer .ftr-menu a {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.333333px;
+  color: #FFFFFF;
+  margin-bottom: 5px;
+}
+footer .ftr-menu a:hover {
+  color: #ccc;
+}
+footer .ftr-menu a:last-child {
+  margin-bottom: 0;
+}
+
+footer .socials {
+  margin: 50px 0 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .socials a {
+  margin-right: 35px;
+}
+footer .socials a:hover {
+  transform: scale(1.1);
+}
+footer .socials a:last-child {
+  margin-right: 0;
+}
+
+footer .ftr-con {
+  background: #fff;
+}
+footer .ftr-politic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+footer .ftr-politic p,
+footer .ftr-politic a {
+  margin: 0 45px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.333333px;
+  color: #1B3B58;
+}
+footer .ftr-politic a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media only screen and (max-width: 480px){} */
