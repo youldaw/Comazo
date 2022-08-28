@@ -34,6 +34,103 @@ $(function (){
         }
     });
 
+    $('.side-slide').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        dots:false,
+        center: false,
+        smartSpeed:900,
+        items:2,
+        navText: ['<img src="images/slide-left-arrow.svg">','<img src="images/slide-right-arrow.svg">'],
+        responsive:{
+            0:{
+                items:1,
+            },
+            600:{
+                items:1,
+            },
+            768:{
+                items:1,
+            },
+            1400:{
+                items:2,
+            }
+        }
+    });
+
+    $('.line-slide').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        dots:false,
+        center: false,
+        smartSpeed:900,
+        items:4,
+        navText: ['<img src="images/slide-left-arrow.svg">','<img src="images/slide-right-arrow.svg">'],
+        responsive:{
+            0:{
+                items:2,
+            },
+            768:{
+                items:3,
+            },
+            1000:{
+                items:4,
+            }
+        }
+    });
+
+    $('.resp-slide').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        dots:false,
+        center: false,
+        smartSpeed:900,
+        items:4,
+        navText: ['<img src="images/slide-left-arrow.svg">','<img src="images/slide-right-arrow.svg">'],
+        responsive:{
+            0:{
+                items:2,
+            },
+            768:{
+                items:3,
+            },
+            1000:{
+                items:4,
+            }
+        }
+    });
+
+    $(window).on('load resize', function () {
+        if ($(this).width() > 1025) {
+            $(".why-slide").trigger('destroy.owl.carousel');
+        } else {
+            $('.why-slide').owlCarousel({
+                loop:false,
+                margin:10,
+                nav:true,
+                dots:false,
+                center: false,
+                smartSpeed:900,
+                items:4,
+                navText: ['<img src="images/slide-left-arrow.svg">','<img src="images/slide-right-arrow.svg">'],
+                responsive:{
+                    0:{
+                        items:2,
+                    },
+                    768:{
+                        items:2.7,
+                    },
+                    1025:{
+                        items:4,
+                    }
+                }
+            });
+        }
+    })
+
 
 });
 
