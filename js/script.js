@@ -159,7 +159,30 @@ $(function (){
 
 
 
-
+    $('.product-popup-slide').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        dots:false,
+        center: false,
+        smartSpeed:900,
+        items:1,
+        navText: ['<img src="images/slide-left-arrow.svg">','<img src="images/slide-right-arrow.svg">'],
+        responsive:{
+            0:{
+                items:1,
+            },
+            768:{
+                items:1,
+            },
+            900:{
+                items:1,
+            },
+            1025:{
+                items:1,
+            }
+        }
+    });
 
 
 

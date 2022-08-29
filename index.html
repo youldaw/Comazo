@@ -188,7 +188,7 @@
 								<div class="product-size">
 									<div class="size-text">
 										<p>Выберите размер:</p>
-										<a href="#!">Таблица размеров</a>
+										<a href="#!" data-bs-toggle="modal" data-bs-target="#exampleModal-SelectSize">Таблица размеров</a>
 									</div>
 									<div class="size-block">
 										<a href="#!" class="size-item">
@@ -220,7 +220,7 @@
 											<span class="first">60</span>
 											<span class="second">54</span>
 										</a>
-										<a href="#!" class="size-item no-bor">
+										<a href="#!" class="size-item no-bor" data-bs-toggle="modal" data-bs-target="#exampleModal-size">
 											<span class="first">RUS</span>
 											<span class="second">GER</span>
 										</a>
@@ -752,7 +752,7 @@
 		Launch demo modal
 	</button> -->
 	
-	<!-- Modal -->
+	<!-- Modal cart -->
 	<div class="modal fade cart-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
@@ -861,6 +861,236 @@
 					<div class="cart-modal-btns">
 						<a href="#!" class="transparent-btn">продолжить покупки</a>
 						<a href="#!" class="blue-btn">Перейти в корзину</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal product -->
+	<div class="modal fade product-modal" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<button type="button" class="modal-close" data-bs-dismiss="modal" aria-label="Close">
+					<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1 21L21 1.74768" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M1 1L21 20.2523" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>						
+				</button>
+
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-lg-6 popup-col">
+							<div class="product-popup-slide">
+								<div class="popup-img">
+									<img src="images/popup-img.jpg" alt="">
+									<div class="popup-tags tags">
+										<span class="new">new</span>
+									</div>
+								</div>
+								<div class="popup-img">
+									<img src="images/popup-img.jpg" alt="">
+									<div class="popup-tags tags">
+										<span class="new">new</span>
+										<span class="sale">-45%</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="pop-product-side">
+								<div class="pop-side-tag">
+									<span class="red">Warm</span>
+									<span class="light-gray">с шерстью</span>
+								</div>
+								<div class="pop-product-name">
+									<h2>Майка женская</h2>
+								</div>
+								<div class="pop-product-price">
+									<p>1319 ₽</p>
+								</div>
+								<div class="pop-product-color">
+									<p>Цвет: <span>сиреневый мелированный</span></p>
+									<div class="colors">
+										<span><a href="#!" class="pink"></a></span>
+										<span><a href="#!" class="light-blue"></a></span>
+										<span><a href="#!" class="light-gray"></a></span>
+									</div>
+								</div>
+								<div class="pop-product-size">
+									<div class="size-text">
+										<p>Выберите размер:</p>
+										<a href="#!">Таблица размеров</a>
+									</div>
+									<div class="size-block">
+										<a href="#!" class="size-item">
+											<span class="first">44</span>
+											<span class="second">38</span>
+										</a>
+										<a href="#!" class="size-item">
+											<span class="first">48</span>
+											<span class="second">42</span>
+										</a>
+										<a href="#!" class="size-item">
+											<span class="first">50</span>
+											<span class="second">44</span>
+										</a>
+
+										<a href="#!" class="size-item">
+											<span class="first">52</span>
+											<span class="second">46</span>
+										</a>
+										<a href="#!" class="size-item">
+											<span class="first">56</span>
+											<span class="second">50</span>
+										</a>
+										<a href="#!" class="size-item no-bor">
+											<span class="first">RUS</span>
+											<span class="second">GER</span>
+										</a>
+									</div>
+								</div>
+								<div class="pop-product-cart">
+									<a href="#!" class="add-to-cart">добавить в корзину</a>
+									<a href="#!" class="add-to-fav">
+										<svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M19.4578 2.59133C18.9691 2.08683 18.3889 1.68663 17.7503 1.41358C17.1117 1.14054 16.4272 1 15.7359 1C15.0446 1 14.3601 1.14054 13.7215 1.41358C13.0829 1.68663 12.5026 2.08683 12.0139 2.59133L10.9997 3.63785L9.98554 2.59133C8.99842 1.57276 7.6596 1.00053 6.26361 1.00053C4.86761 1.00053 3.52879 1.57276 2.54168 2.59133C1.55456 3.6099 1 4.99139 1 6.43187C1 7.87235 1.55456 9.25383 2.54168 10.2724L3.55588 11.3189L10.9997 19L18.4436 11.3189L19.4578 10.2724C19.9467 9.76814 20.3346 9.16942 20.5992 8.51045C20.8638 7.85148 21 7.14517 21 6.43187C21 5.71857 20.8638 5.01225 20.5992 4.35328C20.3346 3.69431 19.9467 3.09559 19.4578 2.59133V2.59133Z" stroke="#696969" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>											
+									</a>
+								</div>
+								<div class="pop-product-dropdown">
+									<div class="accordion" id="accordionPopup">
+										<div class="accordion-item">
+											<h2 class="accordion-header" id="headingSostav">
+											  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSostav" aria-expanded="false" aria-controls="collapseSostav">
+													состав и описание
+												  <img src="images/accordion-arrow.svg" alt="">
+											  </button>
+											</h2>
+											<div id="collapseSostav" class="accordion-collapse collapse" aria-labelledby="headingSostav" data-bs-parent="#accordionPopup">
+											  <div class="accordion-body">
+												Sostav
+											  </div>
+											</div>
+										</div>
+										<div class="accordion-item">
+											<h2 class="accordion-header" id="headingSize">
+											  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSize" aria-expanded="false" aria-controls="collapseSize">
+													Размер и посадка
+												  <img src="images/accordion-arrow.svg" alt="">
+											  </button>
+											</h2>
+											<div id="collapseSize" class="accordion-collapse collapse" aria-labelledby="headingSize" data-bs-parent="#accordionPopup">
+											  <div class="accordion-body">
+												Размер
+											  </div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="pop-link">
+									<a href="#!" class="more-info">Больше информации о товаре</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal size -->
+	<div class="modal fade modal-size" id="exampleModal-size" tabindex="-1" aria-labelledby="exampleModalLabel-size" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<button type="button" class="modal-close" data-bs-dismiss="modal" aria-label="Close">
+					<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1 21L21 1.74768" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M1 1L21 20.2523" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>						
+				</button>
+
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-lg-7 pop-size-col">
+							<div class="pop-size-img">
+								<img src="images/size-popup-img.jpg" alt="">
+							</div>
+						</div>
+						<div class="col-lg-5">
+							<div class="pop-size-block">
+								<div class="pop-size-side">
+									<img src="images/size-popup-img2.jpg" alt="">
+								</div>
+								<div class="determine-size">
+									<p>Как определить размер?</p>
+									<span>Сантиметровая лента должна плотно прилегать к телу, но не перетягивать его. Измерьте обхват груди по наиболее выступающим точкам, пропустив ленту под подмышечными впадинами. Обхват талии измеряется по самой узкой части тела, проходя через самую выступающую точку живота. Измерьте обхват бедер по наиболее выступающим точкам ягодиц.</span>
+									<span>Если товары вам не подойдут, их можно легко вернуть. Подробнее про <a href="#!">условия возврата.</a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal select-size -->
+	<div class="modal fade modal-select-size" id="exampleModal-SelectSize" tabindex="-1" aria-labelledby="exampleModalLabel-SelectSize" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<button type="button" class="modal-close" data-bs-dismiss="modal" aria-label="Close">
+					<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1 21L21 1.74768" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M1 1L21 20.2523" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>						
+				</button>
+
+				<div class="modal-body">
+					<div class="pop-select-size">
+						<div class="size-text">
+							<p>Выберите размер:</p>
+							<a href="#!" data-bs-toggle="modal" data-bs-target="#exampleModal-SelectSize">Таблица размеров</a>
+						</div>
+						<div class="size-block">
+							<a href="#!" class="size-item">
+								<span class="first">44</span>
+								<span class="second">38</span>
+							</a>
+							<a href="#!" class="size-item">
+								<span class="first">48</span>
+								<span class="second">42</span>
+							</a>
+							<a href="#!" class="size-item">
+								<span class="first">50</span>
+								<span class="second">44</span>
+							</a>
+
+							<a href="#!" class="size-item">
+								<span class="first">52</span>
+								<span class="second">46</span>
+							</a>
+							<a href="#!" class="size-item">
+								<span class="first">56</span>
+								<span class="second">50</span>
+							</a>
+							<a href="#!" class="size-item">
+								<span class="first">58</span>
+								<span class="second">52</span>
+							</a>
+							<a href="#!" class="size-item">
+								<span class="first">60</span>
+								<span class="second">54</span>
+							</a>
+							<a href="#!" class="size-item no-bor">
+								<span class="first">RUS</span>
+								<span class="second">GER</span>
+							</a>
+						</div>
+
+						<div class="size-table-link">
+							<a href="#!">Таблица размеров</a>
+						</div>
 					</div>
 				</div>
 			</div>
