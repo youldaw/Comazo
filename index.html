@@ -47,10 +47,16 @@
 					<div class="header-menu">
 						<div class="row header-menu-rov">
 							<div class="col-4">
+								<div class="mob mob-menu">
+									<a href="#!" class="mob-menu-btn"><img src="images/menu-icon.svg" alt=""></a>
+									<a href="#!" class="search-btn mob"><img src="images/search-icon.svg" alt=""></a>
+								</div>
 								<div class="header-menu-left">
-									<a href="#!">РОЗНИЦА</a>
-									<a href="#!">ОПТ</a>
-									<form action="#!" id="head-search">
+									<a href="#!" class="retail-link menu-link">РОЗНИЦА</a>
+									<a href="#!" class="opt-link menu-link">ОПТ</a>
+									<a href="#!" class="search-btn tab"><img src="images/search-icon.svg" alt=""></a>
+
+									<form action="#!" id="head-search" class="pc">
 										<div class="form-group">
 											<input type="search" name="search" id="search">
 										</div>
@@ -64,9 +70,9 @@
 							</div>
 							<div class="col-4">
 								<div class="header-menu-right">
-									<a href="#!"><img src="images/login-icon.svg" alt=""></a>
-									<a href="#!"><img src="images/favorite-icon.svg" alt=""></a>
-									<a href="#!"><img src="images/cart-icon.svg" alt=""></a>
+									<a href="#!" class="login-link"><img src="images/login-icon.svg" alt=""></a>
+									<a href="#!" class="fav-link"><img src="images/favorite-icon.svg" alt=""></a>
+									<a href="#!" class="cart-link"><img src="images/cart-icon.svg" alt=""></a>
 								</div>
 							</div>
 						</div>
@@ -79,38 +85,120 @@
 					<div class="col-lg-12">
 						<nav class="navbar navbar-expand-lg">
 							<div class="navbar-collapse">
+								<div class="mob">
+									<div class="menu-top">
+										<a href="#!" class="menu-logo"><img src="images/menu-logo.png" alt=""></a>
+										<a href="#!" class="menu-closer"><img src="images/menu-close-icon.svg" alt=""></a>
+									</div>	
+									<div class="menu-links">
+										<div class="links-item">
+											<a href="#!" class="top-menu-link active">ЖЕНСКОЕ</a>
+											<a href="#!" class="top-menu-link">МУЖСКОЕ</a>
+											<a href="#!" class="top-menu-link">ДЕТСКОЕ</a>
+											<a href="#!" class="top-menu-link">ОПТ</a>
+										</div>
+									</div>
+								</div>
 								<ul class="navbar-nav">
-								  <li class="nav-item">
-									<a class="nav-link" href="#">NEW</a>
-								  </li>
-								  <li class="nav-item">
-									<a class="nav-link" href="#">ЖЕНСКОЕ</a>
-								  </li>
-								  <li class="nav-item">
-									<a class="nav-link" href="#">МУЖСКОЕ</a>
-								  </li>
-								  <li class="nav-item">
-									<a class="nav-link" href="#">ДЕТСКОЕ</a>
-								  </li>
+									<li class="nav-item dropdown">
+										<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+											NEW
+											<img src="images/menu-arrow.svg" alt="">
+										</a>
+										<ul class="dropdown-menu">
+										  <li><a class="dropdown-item" href="#">Action</a></li>
+										  <li><a class="dropdown-item" href="#">Another action</a></li>
+										  <li><a class="dropdown-item" href="#">Something else</a></li>
+										</ul>
+									</li>
+									<li class="nav-item dropdown">
+										<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+											ЖЕНСКОЕ
+											<img src="images/menu-arrow.svg" alt="">
+										</a>
+										<ul class="dropdown-menu">
+										  <li><a class="dropdown-item" href="#">Action</a></li>
+										  <li><a class="dropdown-item" href="#">Another action</a></li>
+										  <li><a class="dropdown-item" href="#">Something else here</a></li>
+										</ul>
+									</li>
+									<li class="nav-item dropdown">
+										<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+											МУЖСКОЕ
+											<img src="images/menu-arrow.svg" alt="">
+										</a>
+										<ul class="dropdown-menu">
+										  <li><a class="dropdown-item" href="#">Action</a></li>
+										  <li><a class="dropdown-item" href="#">Another action</a></li>
+										  <li><a class="dropdown-item" href="#">Something here</a></li>
+										</ul>
+									</li>
+									<li class="nav-item dropdown">
+										<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+											ДЕТСКОЕ
+											<img src="images/menu-arrow.svg" alt="">
+										</a>
+										<ul class="dropdown-menu">
+										  <li><a class="dropdown-item" href="#">Action</a></li>
+										  <li><a class="dropdown-item" href="#">Another action</a></li>
+										  <li><a class="dropdown-item" href="#">else here</a></li>
+										</ul>
+									</li>
 	
-								  <li class="nav-item">
-									<a class="nav-link slash" href="#">|</a>
-								  </li>
-	
-								  <li class="nav-item">
-									<a class="nav-link" href="#">ТЕРМО</a>
-								  </li>
-								  <li class="nav-item">
-									<a class="nav-link" href="#">БИО</a>
-								  </li>
-								  <li class="nav-item">
-									<a class="nav-link" href="#">SALE</a>
-								  </li>
-								  <li class="nav-item">
-									<a class="nav-link" href="#">OUTLET</a>
-								  </li>
+									<li class="nav-item slash">
+										<a class="nav-link" href="#">|</a>
+									</li>
+
+									<li class="nav-item dropdown">
+										<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+											ТЕРМО
+											<img src="images/menu-arrow.svg" alt="">
+										</a>
+										<ul class="dropdown-menu">
+										  <li><a class="dropdown-item" href="#">Action</a></li>
+										  <li><a class="dropdown-item" href="#">Another action</a></li>
+										  <li><a class="dropdown-item" href="#">Something else here</a></li>
+										</ul>
+									</li>
+									<li class="nav-item dropdown">
+										<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+											БИО
+											<img src="images/menu-arrow.svg" alt="">
+										</a>
+										<ul class="dropdown-menu">
+										  <li><a class="dropdown-item" href="#">Action</a></li>
+										  <li><a class="dropdown-item" href="#">Another action</a></li>
+										  <li><a class="dropdown-item" href="#">Something else here</a></li>
+										</ul>
+									</li>
+									<li class="nav-item dropdown">
+										<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+											SALE
+											<img src="images/menu-arrow.svg" alt="">
+										</a>
+										<ul class="dropdown-menu">
+										  <li><a class="dropdown-item" href="#">Action</a></li>
+										  <li><a class="dropdown-item" href="#">Another action</a></li>
+										  <li><a class="dropdown-item" href="#">Something else here</a></li>
+										</ul>
+									</li>
+									<li class="nav-item dropdown">
+										<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+											OUTLET
+											<img src="images/menu-arrow.svg" alt="">
+										</a>
+										<ul class="dropdown-menu">
+										  <li><a class="dropdown-item" href="#">Action</a></li>
+										  <li><a class="dropdown-item" href="#">Another action</a></li>
+										  <li><a class="dropdown-item" href="#">Something else here</a></li>
+										</ul>
+									</li>
 								</ul>
-							  </div>
+
+								<div class="mob menu-login-btn">
+									<a href="#!" class="blue-btn">Войти в аккаунт</a>
+								</div>
+							</div>
 						</nav>
 					</div>
 				</div>
@@ -137,8 +225,8 @@
 			<section class="product-sec">
 				<div class="container">
 					<div class="row">
-						<div class="col-lg-8 col-md-6">
-							<div class="row">
+						<div class="col-lg-8 col-md-6 col-sm-12 pro-col-left">
+							<div class="row mob-slide">
 								<div class="col-lg-6 product-col">
 									<div class="product-img new">
 										<img src="images/product-img1.jpg" alt="">
@@ -164,9 +252,120 @@
 									</div>
 								</div>
 							</div>
+
+							<div class="product-info medium">
+								<div class="row">
+									<div class="col-lg-9">
+										<div class="info-block">
+											<h3>ЧТО ТАКОЕ ЛИНИЯ <span>active-25</span></h3>
+											<div class="info-warm">
+												<p>Мягкие, тёплые и комфортные вещи из хлопка и шерсти – самый приятный и красивый способ справиться с холодом. Подойдёт тем, кто хочет утеплиться зимой, но не планирует активный отдых и частую смену температурных режимов. С этими задачами идеально справится наше термобельё.</p>
+											</div>
+											<div class="info-icon">
+												<img src="images/product-icon1.svg" alt="">
+												<div class="in-text">
+													<h6>Для средней активности</h6>
+													<p>катание на санках, игра в снежки или лепка снеговиков</p>
+												</div>
+											</div>
+											<div class="info-icon">
+												<img src="images/product-icon1.svg" alt="">
+												<div class="in-text">
+													<h6>без боковых швов</h6>
+													<p>изделие реже рвется и не натирает кожу</p>
+												</div>
+											</div>
+											<div class="info-icon">
+												<img src="images/product-icon2.svg" alt="">
+												<div class="in-text">
+													<h6>Антистатическая пропитка</h6>
+													<p>препятствует возникновению электрических зарядов</p>
+												</div>
+											</div>
+			
+											<div class="info-icon">
+												<img src="images/product-icon3.svg" alt="">
+												<div class="in-text">
+													<h6>Воздушная подушка между волокнами</h6>
+													<p>повышает теплощазиту изделия на 20%</p>
+												</div>
+											</div>
+											<div class="info-icon">
+												<img src="images/product-icon4.svg" alt="">
+												<div class="in-text">
+													<h6>Удлиненная спинка</h6>
+													<p>защищает поясницу от переохлаждения</p>
+												</div>
+											</div>
+											<div class="info-icon">
+												<img src="images/product-icon5.svg" alt="">
+												<div class="in-text">
+													<h6>ластичное переплетение</h6>
+													<p>трикотаж мягко облегает тело, не стягивая его</p>
+												</div>
+											</div>
+										</div>
+									</div>
+			
+									<div class="col-lg-9">
+										<div class="info-block temprature-block">
+											<h3>Термосвойства</h3>
+											<div class="info-temprature">
+												<p class="temp-text">Темпратурный режим до -25ºС.</p>
+												<div class="temprature-gradus">
+													<span class="gradus-line"></span>
+													<div class="gradus-num">
+														<span>-40ºС</span>
+														<span>-30ºС</span>
+														<span>-20ºС</span>
+														<span>-10ºС</span>
+														<span>0ºС</span>
+														<span>10ºС</span>
+													</div>
+												</div>
+												<div class="temprature-items">
+													<p>Отвод влаги:</p>
+													<div class="items-line">
+														<span class="active"></span>
+														<span class="active"></span>
+														<span class="active"></span>
+													</div>
+												</div>
+												<div class="temprature-items">
+													<p>Сохранение тепла:</p>
+													<div class="items-line">
+														<span class="active"></span>
+														<span class="active"></span>
+														<span></span>
+													</div>
+												</div>
+												<div class="temprature-items">
+													<p>Защита от ветра:</p>
+													<div class="items-line">
+														<span class="active"></span>
+														<span></span>
+														<span></span>
+													</div>
+												</div>
+												<div class="temprature-items">
+													<p>Скорость высыхания:</p>
+													<div class="items-line">
+														<span class="active"></span>
+														<span class="active"></span>
+														<span class="active"></span>
+													</div>
+												</div>
+												<div class="temprature-link">
+													<a href="#!">Как подобрать термобелье?</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 
-						<div class="col-lg-4 col-md-6">
+						<div class="col-lg-4 col-md-6 col-sm-12 pro-col-right">
 							<div class="product-side">
 								<div class="side-tag">
 									<span class="yellow">ACTIVE</span>
@@ -319,12 +518,122 @@
 									</div>
 								</div>
 							</div>
+							<div class="product-info tab">
+								<div class="row">
+									<div class="col-lg-12">
+										<div class="info-block">
+											<h3>ЧТО ТАКОЕ ЛИНИЯ <span>active-25</span></h3>
+											<div class="info-warm">
+												<p>Мягкие, тёплые и комфортные вещи из хлопка и шерсти – самый приятный и красивый способ справиться с холодом. Подойдёт тем, кто хочет утеплиться зимой, но не планирует активный отдых и частую смену температурных режимов. С этими задачами идеально справится наше термобельё.</p>
+											</div>
+											<div class="info-icon">
+												<img src="images/product-icon1.svg" alt="">
+												<div class="in-text">
+													<h6>Для средней активности</h6>
+													<p>катание на санках, игра в снежки или лепка снеговиков</p>
+												</div>
+											</div>
+											<div class="info-icon">
+												<img src="images/product-icon1.svg" alt="">
+												<div class="in-text">
+													<h6>без боковых швов</h6>
+													<p>изделие реже рвется и не натирает кожу</p>
+												</div>
+											</div>
+											<div class="info-icon">
+												<img src="images/product-icon2.svg" alt="">
+												<div class="in-text">
+													<h6>Антистатическая пропитка</h6>
+													<p>препятствует возникновению электрических зарядов</p>
+												</div>
+											</div>
+			
+											<div class="info-icon">
+												<img src="images/product-icon3.svg" alt="">
+												<div class="in-text">
+													<h6>Воздушная подушка между волокнами</h6>
+													<p>повышает теплощазиту изделия на 20%</p>
+												</div>
+											</div>
+											<div class="info-icon">
+												<img src="images/product-icon4.svg" alt="">
+												<div class="in-text">
+													<h6>Удлиненная спинка</h6>
+													<p>защищает поясницу от переохлаждения</p>
+												</div>
+											</div>
+											<div class="info-icon">
+												<img src="images/product-icon5.svg" alt="">
+												<div class="in-text">
+													<h6>ластичное переплетение</h6>
+													<p>трикотаж мягко облегает тело, не стягивая его</p>
+												</div>
+											</div>
+										</div>
+									</div>
+			
+									<div class="col-lg-12">
+										<div class="info-block temprature-block">
+											<h3>Термосвойства</h3>
+											<div class="info-temprature">
+												<p class="temp-text">Темпратурный режим до -25ºС.</p>
+												<div class="temprature-gradus">
+													<span class="gradus-line"></span>
+													<div class="gradus-num">
+														<span>-40ºС</span>
+														<span>-30ºС</span>
+														<span>-20ºС</span>
+														<span>-10ºС</span>
+														<span>0ºС</span>
+														<span>10ºС</span>
+													</div>
+												</div>
+												<div class="temprature-items">
+													<p>Отвод влаги:</p>
+													<div class="items-line">
+														<span class="active"></span>
+														<span class="active"></span>
+														<span class="active"></span>
+													</div>
+												</div>
+												<div class="temprature-items">
+													<p>Сохранение тепла:</p>
+													<div class="items-line">
+														<span class="active"></span>
+														<span class="active"></span>
+														<span></span>
+													</div>
+												</div>
+												<div class="temprature-items">
+													<p>Защита от ветра:</p>
+													<div class="items-line">
+														<span class="active"></span>
+														<span></span>
+														<span></span>
+													</div>
+												</div>
+												<div class="temprature-items">
+													<p>Скорость высыхания:</p>
+													<div class="items-line">
+														<span class="active"></span>
+														<span class="active"></span>
+														<span class="active"></span>
+													</div>
+												</div>
+												<div class="temprature-link">
+													<a href="#!">Как подобрать термобелье?</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<section class="product-info">
+			<section class="product-info pc">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-4">
@@ -398,7 +707,7 @@
 						</div>
 
 						<div class="col-lg-4">
-							<div class="info-block">
+							<div class="info-block temprature-block">
 								<h3>Термосвойства</h3>
 								<div class="info-temprature">
 									<p class="temp-text">Темпратурный режим до -25ºС.</p>
@@ -467,6 +776,11 @@
 							<div class="line-slide">
 								<div class="line-block">
 									<div class="line-img">
+										<a href="#!" class="fav-icon">
+											<svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M28.6867 3.387C27.9537 2.63025 27.0833 2.02994 26.1254 1.62037C25.1675 1.21081 24.1407 1 23.1038 1C22.0669 1 21.0402 1.21081 20.0822 1.62037C19.1243 2.02994 18.254 2.63025 17.5209 3.387L15.9996 4.95678L14.4783 3.387C12.9976 1.85914 10.9894 1.00079 8.89541 1.00079C6.80142 1.00079 4.79319 1.85914 3.31251 3.387C1.83184 4.91486 1 6.98708 1 9.1478C1 11.3085 1.83184 13.3807 3.31251 14.9086L4.83382 16.4784L15.9996 28L27.1654 16.4784L28.6867 14.9086C29.4201 14.1522 30.0019 13.2541 30.3988 12.2657C30.7957 11.2772 31 10.2178 31 9.1478C31 8.07785 30.7957 7.01838 30.3988 6.02992C30.0019 5.04147 29.4201 4.14339 28.6867 3.387V3.387Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
+										</a>
 										<img src="images/product-line-img1.jpg" alt="">
 										<div class="line-tags tags">
 											<span class="new">new</span>
@@ -482,6 +796,11 @@
 								</div>
 								<div class="line-block">
 									<div class="line-img">
+										<a href="#!" class="fav-icon">
+											<svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M28.6867 3.387C27.9537 2.63025 27.0833 2.02994 26.1254 1.62037C25.1675 1.21081 24.1407 1 23.1038 1C22.0669 1 21.0402 1.21081 20.0822 1.62037C19.1243 2.02994 18.254 2.63025 17.5209 3.387L15.9996 4.95678L14.4783 3.387C12.9976 1.85914 10.9894 1.00079 8.89541 1.00079C6.80142 1.00079 4.79319 1.85914 3.31251 3.387C1.83184 4.91486 1 6.98708 1 9.1478C1 11.3085 1.83184 13.3807 3.31251 14.9086L4.83382 16.4784L15.9996 28L27.1654 16.4784L28.6867 14.9086C29.4201 14.1522 30.0019 13.2541 30.3988 12.2657C30.7957 11.2772 31 10.2178 31 9.1478C31 8.07785 30.7957 7.01838 30.3988 6.02992C30.0019 5.04147 29.4201 4.14339 28.6867 3.387V3.387Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
+										</a>
 										<img src="images/product-line-img2.jpg" alt="">
 										<div class="line-tags tags">
 											<span class="new">new</span>
@@ -496,6 +815,11 @@
 								</div>
 								<div class="line-block">
 									<div class="line-img">
+										<a href="#!" class="fav-icon">
+											<svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M28.6867 3.387C27.9537 2.63025 27.0833 2.02994 26.1254 1.62037C25.1675 1.21081 24.1407 1 23.1038 1C22.0669 1 21.0402 1.21081 20.0822 1.62037C19.1243 2.02994 18.254 2.63025 17.5209 3.387L15.9996 4.95678L14.4783 3.387C12.9976 1.85914 10.9894 1.00079 8.89541 1.00079C6.80142 1.00079 4.79319 1.85914 3.31251 3.387C1.83184 4.91486 1 6.98708 1 9.1478C1 11.3085 1.83184 13.3807 3.31251 14.9086L4.83382 16.4784L15.9996 28L27.1654 16.4784L28.6867 14.9086C29.4201 14.1522 30.0019 13.2541 30.3988 12.2657C30.7957 11.2772 31 10.2178 31 9.1478C31 8.07785 30.7957 7.01838 30.3988 6.02992C30.0019 5.04147 29.4201 4.14339 28.6867 3.387V3.387Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
+										</a>
 										<img src="images/product-line-img3.jpg" alt="">
 										<div class="line-tags tags">
 											<span class="new">new</span>
@@ -512,6 +836,11 @@
 								</div>
 								<div class="line-block">
 									<div class="line-img">
+										<a href="#!" class="fav-icon">
+											<svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M28.6867 3.387C27.9537 2.63025 27.0833 2.02994 26.1254 1.62037C25.1675 1.21081 24.1407 1 23.1038 1C22.0669 1 21.0402 1.21081 20.0822 1.62037C19.1243 2.02994 18.254 2.63025 17.5209 3.387L15.9996 4.95678L14.4783 3.387C12.9976 1.85914 10.9894 1.00079 8.89541 1.00079C6.80142 1.00079 4.79319 1.85914 3.31251 3.387C1.83184 4.91486 1 6.98708 1 9.1478C1 11.3085 1.83184 13.3807 3.31251 14.9086L4.83382 16.4784L15.9996 28L27.1654 16.4784L28.6867 14.9086C29.4201 14.1522 30.0019 13.2541 30.3988 12.2657C30.7957 11.2772 31 10.2178 31 9.1478C31 8.07785 30.7957 7.01838 30.3988 6.02992C30.0019 5.04147 29.4201 4.14339 28.6867 3.387V3.387Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
+										</a>
 										<img src="images/product-line-img4.jpg" alt="">
 										<div class="line-tags tags">
 											<span class="new">new</span>
@@ -542,6 +871,11 @@
 							<div class="resp-slide">
 								<div class="resp-block">
 									<div class="resp-img">
+										<a href="#!" class="fav-icon">
+											<svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M28.6867 3.387C27.9537 2.63025 27.0833 2.02994 26.1254 1.62037C25.1675 1.21081 24.1407 1 23.1038 1C22.0669 1 21.0402 1.21081 20.0822 1.62037C19.1243 2.02994 18.254 2.63025 17.5209 3.387L15.9996 4.95678L14.4783 3.387C12.9976 1.85914 10.9894 1.00079 8.89541 1.00079C6.80142 1.00079 4.79319 1.85914 3.31251 3.387C1.83184 4.91486 1 6.98708 1 9.1478C1 11.3085 1.83184 13.3807 3.31251 14.9086L4.83382 16.4784L15.9996 28L27.1654 16.4784L28.6867 14.9086C29.4201 14.1522 30.0019 13.2541 30.3988 12.2657C30.7957 11.2772 31 10.2178 31 9.1478C31 8.07785 30.7957 7.01838 30.3988 6.02992C30.0019 5.04147 29.4201 4.14339 28.6867 3.387V3.387Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
+										</a>
 										<img src="images/product-resp-img1.jpg" alt="">
 										<div class="resp-tags tags">
 											<span class="new">new</span>
@@ -556,6 +890,11 @@
 								</div>
 								<div class="resp-block">
 									<div class="resp-img">
+										<a href="#!" class="fav-icon">
+											<svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M28.6867 3.387C27.9537 2.63025 27.0833 2.02994 26.1254 1.62037C25.1675 1.21081 24.1407 1 23.1038 1C22.0669 1 21.0402 1.21081 20.0822 1.62037C19.1243 2.02994 18.254 2.63025 17.5209 3.387L15.9996 4.95678L14.4783 3.387C12.9976 1.85914 10.9894 1.00079 8.89541 1.00079C6.80142 1.00079 4.79319 1.85914 3.31251 3.387C1.83184 4.91486 1 6.98708 1 9.1478C1 11.3085 1.83184 13.3807 3.31251 14.9086L4.83382 16.4784L15.9996 28L27.1654 16.4784L28.6867 14.9086C29.4201 14.1522 30.0019 13.2541 30.3988 12.2657C30.7957 11.2772 31 10.2178 31 9.1478C31 8.07785 30.7957 7.01838 30.3988 6.02992C30.0019 5.04147 29.4201 4.14339 28.6867 3.387V3.387Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
+										</a>
 										<img src="images/product-resp-img2.jpg" alt="">
 										<div class="resp-tags tags">
 											<span class="sale">-45%</span>
@@ -571,6 +910,11 @@
 								</div>
 								<div class="resp-block">
 									<div class="resp-img">
+										<a href="#!" class="fav-icon">
+											<svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M28.6867 3.387C27.9537 2.63025 27.0833 2.02994 26.1254 1.62037C25.1675 1.21081 24.1407 1 23.1038 1C22.0669 1 21.0402 1.21081 20.0822 1.62037C19.1243 2.02994 18.254 2.63025 17.5209 3.387L15.9996 4.95678L14.4783 3.387C12.9976 1.85914 10.9894 1.00079 8.89541 1.00079C6.80142 1.00079 4.79319 1.85914 3.31251 3.387C1.83184 4.91486 1 6.98708 1 9.1478C1 11.3085 1.83184 13.3807 3.31251 14.9086L4.83382 16.4784L15.9996 28L27.1654 16.4784L28.6867 14.9086C29.4201 14.1522 30.0019 13.2541 30.3988 12.2657C30.7957 11.2772 31 10.2178 31 9.1478C31 8.07785 30.7957 7.01838 30.3988 6.02992C30.0019 5.04147 29.4201 4.14339 28.6867 3.387V3.387Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
+										</a>
 										<img src="images/product-resp-img3.jpg" alt="">
 										<div class="resp-tags tags">
 											<span class="new">new</span>
@@ -586,6 +930,11 @@
 								</div>
 								<div class="resp-block">
 									<div class="resp-img">
+										<a href="#!" class="fav-icon">
+											<svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M28.6867 3.387C27.9537 2.63025 27.0833 2.02994 26.1254 1.62037C25.1675 1.21081 24.1407 1 23.1038 1C22.0669 1 21.0402 1.21081 20.0822 1.62037C19.1243 2.02994 18.254 2.63025 17.5209 3.387L15.9996 4.95678L14.4783 3.387C12.9976 1.85914 10.9894 1.00079 8.89541 1.00079C6.80142 1.00079 4.79319 1.85914 3.31251 3.387C1.83184 4.91486 1 6.98708 1 9.1478C1 11.3085 1.83184 13.3807 3.31251 14.9086L4.83382 16.4784L15.9996 28L27.1654 16.4784L28.6867 14.9086C29.4201 14.1522 30.0019 13.2541 30.3988 12.2657C30.7957 11.2772 31 10.2178 31 9.1478C31 8.07785 30.7957 7.01838 30.3988 6.02992C30.0019 5.04147 29.4201 4.14339 28.6867 3.387V3.387Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
+										</a>
 										<img src="images/product-resp-img2.jpg" alt="">
 										<div class="resp-tags tags">
 											<span class="sale">-45%</span>
@@ -671,14 +1020,14 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-lg-6">
+						<div class="col-lg-6 col-md-6 col-sm-6">
 							<div class="help-block">
 								<h3>ЗАКАЗАТЬ ПО ТЕЛЕФОНУ</h3>
 								<p>Available Monday to Friday, 09:00 - 20:00 GMT</p>
 								<p>Держите под рукой артикул этого товара: 1/59/705</p>
 							</div>
 						</div>
-						<div class="col-lg-6">
+						<div class="col-lg-6 col-md-6 col-sm-6">
 							<div class="help-block">
 								<h3>Помощь в обслуживании</h3>
 								<p>Мы собрали на одной странице ответы на самые частые вопросы</p>
@@ -693,48 +1042,59 @@
 		<footer class="footer">
 			<div class="container">
 				<div class="row ftr-rov">
-					<div class="col-lg-3">
+					<div class="col-lg-3 col-md-3 col-sm-12 ftr-col">
 						<div class="ftr-menu">
-							<p>ОБСЛУЖИВАНИЕ</p>
+							<p>ОБСЛУЖИВАНИЕ <img src="images/menu-arrow.svg" alt=""></p>
 							<a href="#!">Поддержка</a>
 							<a href="#!">Возврат и обмен товара</a>
 							<a href="#!">Бонусная система</a>
 						</div>
 					</div>
-					<div class="col-lg-3">
+					<div class="col-lg-3 col-md-3 col-sm-12 ftr-col">
 						<div class="ftr-menu">
-							<p>АССОРТИМЕНТ</p>
+							<p>АССОРТИМЕНТ <img src="images/menu-arrow.svg" alt=""></p>
 							<a href="#!">Помощь в выборе моделей</a>
 							<a href="#!">Таблица размеров</a>
 							<a href="#!">Блог</a>
 						</div>
 					</div>
-					<div class="col-lg-3">
+					<div class="col-lg-3 col-md-3 col-sm-12 ftr-col">
 						<div class="ftr-menu">
-							<p>О COMAZO</p>
+							<p>О COMAZO <img src="images/menu-arrow.svg" alt=""></p>
 							<a href="#!">О нас</a>
 							<a href="#!">Производство</a>
 						</div>
 					</div>
-					<div class="col-lg-3">
+					<div class="col-lg-3 col-md-3 col-sm-12 ftr-col">
 						<div class="ftr-menu">
-							<p>КОНТАКТЫ</p>
+							<p>КОНТАКТЫ <img src="images/menu-arrow.svg" alt=""></p>
 							<a href="#!">Контакты</a>
 							<a href="#!">Адреса магазинов</a>
 							<a href="#!">Сотрудничество</a>
 						</div>
 					</div>
 				</div>
+
+				<div class="row">
+					<div class="socials mob">
+						<a href="#!"><img src="images/white-vk-icon.svg" alt=""></a>
+						<a href="#!"><img src="images/white-facebook-icon.svg" alt=""></a>
+						<a href="#!"><img src="images/white-insta-icon.svg" alt=""></a>
+						<a href="#!"><img src="images/white-special-icon.svg" alt=""></a>
+					</div>
+				</div>
 			</div>
 			<div class="container-fluid ftr-con">
 				<div class="container">
 					<div class="row">
-						<div class="col-lg-8 ftr-politic">
+						<div class="col-lg-8 col-md-8 col-sm-12 ftr-politic">
 							<p>2019. COMAZO</p>
-							<a href="#!">ПОЛИТИКА БЕЗОПАСНОСТИ И ПЕРОНАЛЬНЫХ ДАННЫХ </a>
-							<p>ЗАЩИТА ИНФОРМАЦИИ</p>
+							<div class="ftr-politic-text">
+								<a href="#!">ПОЛИТИКА БЕЗОПАСНОСТИ И ПЕРОНАЛЬНЫХ ДАННЫХ </a>
+								<p>ЗАЩИТА ИНФОРМАЦИИ</p>
+							</div>
 						</div>
-						<div class="col-lg-4 socials">
+						<div class="col-lg-4 col-md-4 col-sm-12 socials">
 							<a href="#!"><img src="images/vk-icon.svg" alt=""></a>
 							<a href="#!"><img src="images/facebook-icon.svg" alt=""></a>
 							<a href="#!"><img src="images/insta-icon.svg" alt=""></a>
@@ -763,7 +1123,7 @@
 				<div class="modal-body">
 					<div class="modal-cart-top">
 						<div class="row">
-							<div class="col-lg-6 p-0">
+							<div class="col-lg-6 col-sm-6 p-0">
 								<div class="cart-top">
 									<div class="cart-top-img">
 										<img src="images/modal-price-img.jpg" alt="">
@@ -775,13 +1135,13 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-lg-6 p-0">
+							<div class="col-lg-6 col-sm-6 p-0">
 								<div class="row cart-col">
-									<div class="col-6 cart-top-price">
+									<div class="col-sm-6 col-7 cart-top-price">
 										<del>1499</del>
 										<span>859 ₽</span>
 									</div>
-									<div class="col-6 cart-top-count">
+									<div class="col-sm-6 col-5 cart-top-count">
 										<div class="count">
 											<span class="minus">-</span>
 											<input type='number' min='0' max='1000' step='1' value='1'>
