@@ -2127,6 +2127,9 @@ svg path {
   .title h2 {
     margin-bottom: 20px;
   }
+  .pro-col-left {
+    padding: 0 !important;
+  }
 }
 
 
