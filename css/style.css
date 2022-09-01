@@ -2066,6 +2066,14 @@ svg path {
   .modal-size .pop-size-col {
     padding-right: 15px;
   }
+  .product-cart .product-col {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .product-line .line-col {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 
