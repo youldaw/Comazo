@@ -1875,7 +1875,13 @@ svg path {
     align-items: flex-start;
   }
   .product-sec .product-col:nth-child(odd) {
-    padding-right: 30px;
+    padding-right: 0;
+  }
+  .product-sec .product-col:nth-child(even) {
+    padding-left: 0;
+  }
+  .product-sec .product-col {
+    padding: 0 !important;
   }
   .mob-slide {
     position: relative;
