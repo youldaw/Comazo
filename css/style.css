@@ -1875,13 +1875,19 @@ svg path {
     align-items: flex-start;
   }
   .product-sec .product-col:nth-child(odd) {
-    padding-right: 25px;
+    display: block;
+    width: 100%;
+    padding: 0;
   }
-  /* .product-sec .product-col:nth-child(even) {
-    padding-left: 0;
+  .product-sec .product-col:nth-child(even) {
+    display: block;
+    width: 100%;
+    padding: 0;
   }
   .product-sec .product-col {
-    padding: 0 !important; */
+    display: block;
+    width: 100%;
+    padding: 0;
   }
   .mob-slide {
     position: relative;
