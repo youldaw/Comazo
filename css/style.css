@@ -1755,15 +1755,19 @@ svg path {
     opacity: 1;
     visibility: visible;
   }
-  .why-sec .why-slide .owl-nav button.owl-prev,
-  .product-resp .resp-col .owl-nav button.owl-prev,
-  .product-line .line-col .owl-nav button.owl-prev {
+  .why-sec .why-slide .owl-nav button.owl-prev {
     left: 0;
   }
-  .why-sec .why-slide .owl-nav button.owl-next,
+  .why-sec .why-slide .owl-nav button.owl-next {
+    right: 0;
+  }
+  .product-resp .resp-col .owl-nav button.owl-prev,
+  .product-line .line-col .owl-nav button.owl-prev {
+    left: -4px;
+  }
   .product-resp .resp-col .owl-nav button.owl-next,
   .product-line .line-col .owl-nav button.owl-next {
-    right: 0;
+    right: -4px;
   }
   .why-sec .why-slide.owl-drag,
   .product-resp .owl-drag,
@@ -2130,6 +2134,16 @@ svg path {
   }
   .title h2 {
     margin-bottom: 20px;
+  }
+}
+
+
+@media only screen and (max-width: 480px) {
+  .product-line .line-col .owl-nav button {
+    top: 30%;
+  }
+  .why-sec .why-slide .owl-nav button {
+    top: 26%;
   }
 }
 
