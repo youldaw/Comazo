@@ -1727,6 +1727,9 @@ svg path {
 
 
 @media only screen and (max-width: 767px) {
+  .product-modal .pop-product-side {
+    margin-top: 20px;
+  }
   .product-sec .product-img {
     width: 100%;
   }
