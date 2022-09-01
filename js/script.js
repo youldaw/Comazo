@@ -95,7 +95,7 @@ $(function (){
         navText: ['<img src="images/slide-left-arrow.svg">','<img src="images/slide-right-arrow.svg">'],
         responsive:{
             0:{
-                items:2.1,
+                items:2,
                 loop:false,
             },
             768:{
@@ -118,7 +118,7 @@ $(function (){
         navText: ['<img src="images/slide-left-arrow.svg">','<img src="images/slide-right-arrow.svg">'],
         responsive:{
             0:{
-                items:2.1,
+                items:2,
                 loop:false,
             },
             768:{

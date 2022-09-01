@@ -349,6 +349,13 @@ header .navbar .navbar-nav .dropdown-item {
 .product-info .info-temprature .temprature-items p {
   text-transform: uppercase;
   line-height: 1;
+  width: 40%;
+}
+.product-info .info-temprature .temprature-items .items-line {
+  width: 60%;
+}
+.product-info .info-temprature .temprature-items .items-line span {
+  width: 100%;
 }
 .product-info .info-temprature .temprature-items {
   display: flex;
@@ -363,7 +370,7 @@ header .navbar .navbar-nav .dropdown-item {
 }
 .product-info .info-temprature .temprature-items .items-line span {
   display: inline-block;
-  width: 72px;
+  width: 100%;
   height: 10px;
   margin-right: 2px;
   background: #F0F0F0;
@@ -1607,11 +1614,35 @@ svg path {
 
 
 @media only screen and (max-width: 1400px) {
+  .product-info .info-temprature .temprature-items p {
+    width: 46%;
+  }
+  .product-info .info-temprature .temprature-items .items-line {
+    width: 56%;
+  }
   .product-resp .resp-block .resp-img img,
   .product-line .line-block .line-img img,
   .why-sec .why-block img,
   .product-sec .side-slide .side-slide-img img {
     height: auto;
+  }
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+  .product-info .info-temprature .temprature-items p {
+    width: 54%;
+  }
+  .product-info .info-temprature .temprature-items .items-line {
+    width: 46%;
+  }
+}
+
+
+@media only screen and (max-width: 1045px) {
+  .why-sec .why-slide .col-lg-3 {
+    width: 100%;
   }
 }
 
@@ -1631,7 +1662,7 @@ svg path {
     padding-right: 15px;
   }
   .product-sec .product-img img {
-    height: auto;
+    height: 400px;
   }
   .temprature-block,
   .product-info {
@@ -1644,6 +1675,12 @@ svg path {
   .why-text {
     padding-right: 25px;
   }
+  .product-info .info-temprature .temprature-items p {
+    width: 36%;
+  }
+  .product-info .info-temprature .temprature-items .items-line {
+    width: 64%;
+  }
 }
 
 
@@ -1651,6 +1688,15 @@ svg path {
 @media only screen and (max-width: 992px) {
   .medium {display: none;}
   .tab {display: block;}
+  .product-sec .product-img img {
+    height: auto;
+  }
+  .product-info .info-temprature .temprature-items p {
+    width: 50%;
+  }
+  .product-info .info-temprature .temprature-items .items-line {
+    width: 50%;
+  }
   header .navbar-expand-lg .navbar-nav {
     flex-direction: row;
   }
@@ -1662,9 +1708,6 @@ svg path {
   }
   .cart-modal .modal-slide .mSlide-img img {
     height: auto;
-  }
-  .product-info .info-temprature .temprature-items .items-line span {
-    width: 54px;
   }
   .product-sec .product-side .side-tag span {
     white-space: nowrap;
@@ -1684,6 +1727,16 @@ svg path {
 
 
 @media only screen and (max-width: 767px) {
+  section {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .product-info .info-temprature .temprature-items p {
+    width: 40%;
+  }
+  .product-info .info-temprature .temprature-items .items-line {
+    width: 60%;
+  }
   .modal-select-size .size-block .size-item {
     width: 60px;
     height: 60px;
@@ -1708,9 +1761,6 @@ svg path {
   .product-resp .owl-drag,
   .product-line .owl-drag {
     overflow: visible;
-  }
-  .product-info .info-temprature .temprature-items p {
-    width: 40%;
   }
   .product-info .info-temprature .temprature-items {
     justify-content: flex-start;
@@ -2070,13 +2120,29 @@ svg path {
     padding-left: 0;
     padding-right: 0;
   }
+  .title h2 {
+    margin-bottom: 20px;
+  }
 }
 
 
+@media only screen and (max-width: 420px) {
+  .product-info .info-temprature .temprature-items p {
+    width: 45%;
+  }
+  .product-info .info-temprature .temprature-items .items-line {
+    width: 55%;
+  }
+}
 
 
-
-
-
+@media only screen and (max-width: 375px) {
+  .product-info .info-temprature .temprature-items p {
+    width: 50%;
+  }
+  .product-info .info-temprature .temprature-items .items-line {
+    width: 50%;
+  }
+}
 
 
