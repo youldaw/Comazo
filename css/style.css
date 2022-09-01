@@ -1748,7 +1748,8 @@ svg path {
     height: 60px;
   }
   .modal-select-size .modal-dialog {
-    width: 86%;
+    width: 88%;
+    margin-top: 50px;
   }
   .why-sec .why-block a {
     opacity: 1;
