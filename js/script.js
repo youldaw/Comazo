@@ -168,7 +168,7 @@ $(function (){
         } else {
             $('.mob-slide').owlCarousel({
                 loop:false,
-                margin:5,
+                margin:0,
                 nav:true,
                 dots:true,
                 center: false,
