@@ -54,7 +54,7 @@
 								<div class="header-menu-left">
 									<a href="#!" class="retail-link menu-link">РОЗНИЦА</a>
 									<a href="#!" class="opt-link menu-link">ОПТ</a>
-									<a href="#!" class="search-btn tab"><img src="images/search-icon.svg" alt=""></a>
+									<a href="#!" class="search-btn tab medium"><img src="images/search-icon.svg" alt=""></a>
 
 									<form action="#!" id="head-search" class="pc">
 										<div class="form-group">
@@ -112,7 +112,7 @@
 										</ul>
 									</li>
 									<li class="nav-item dropdown">
-										<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+										<a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 											ЖЕНСКОЕ
 											<img src="images/menu-arrow.svg" alt="">
 										</a>
@@ -209,7 +209,7 @@
             <section class="catalog-sec">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-6 pr-0">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6 pr-0">
                             <div class="catalog-main-left cat-main-banner">
                                 <h1>НОВИНКИ <br> НЕДЕЛИ</h1>
                                 <a href="#!" class="view-btn">Смотреть</a>
@@ -217,7 +217,7 @@
                                 <span class="cat-tag">SS/22</span>
                             </div>
                         </div>
-                        <div class="col-lg-6 pl-0">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6 pl-0">
                             <div class="catalog-main-right cat-main-banner">
                                 <img src="images/catalog-main-right-img.png" alt="">
                             </div>
@@ -271,7 +271,7 @@
             <section class="catalog-main">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-3">
+                        <div class="col-xl-3 col-lg-12 catalog-left-side">
                             <div class="catalog-filter">
                                 <div class="bread-crumbs">
                                     <a href="#!">Comazo</a>
@@ -326,11 +326,17 @@
                                       <div id="panelsStayOpen-collapsePrice" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingPrice">
                                         <div class="accordion-body">
                                             <div class="filter-price">
-                                                <div class='multi-range' data-lbound='189' data-ubound='3490'>
-                                                    <hr />
-                                                    <input class="slider one" id="range1" type='range' min='100' max='10000' step='1' value='189' oninput='this.parentNode.dataset.lbound=this.value;'/>
-                                                    <input class="slider" type='range' min='100' max='5000' step='1' value='3490' oninput='this.parentNode.dataset.ubound=this.value;'/>
-                                                </div>
+												<div class="easy-basket-filter">	
+													<div class="easy-basket-filter-range">
+														<input type="range" class="lower range" step="any" min="0" max="5000" value="0"/>
+														<input type="range" class="upper range" step="any" min="0" max="5000" value="5000"/>
+														<div class="fill"></div>
+													</div>
+													<div class="easy-basket-filter-info">
+														<input type="text" class="easy-basket-lower" value="0 ₽" min="0" max="5000"/>
+														<input type="text" class="easy-basket-upper" value="5000 ₽" min="0" max="5000"/>
+													</div>
+												</div>
                                             </div>
                                         </div>
                                       </div>
@@ -463,12 +469,13 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-9">
+                        <div class="col-xl-9 col-lg-12">
                             <div class="catalog-products">
 
                                 <div class="catPro-top">
                                     <div class="title">
                                         <h2>Женская одежда</h2>
+										<a href="#!" class="mob-filter-btn">фильтры</a>
                                     </div>
 
                                     <div class="top-filter">
@@ -507,7 +514,7 @@
 
                                 <div class="ctlg-product">
                                     <div class="row">
-                                        <div class="col-lg-4">
+                                        <div class="col-xl-4 col-lg-3 col-md-4 col-6">
                                             <div class="ctlg-block">
                                                 <div class="ctlg-img">
                                                     <a href="#!" class="fav-icon">
@@ -529,7 +536,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4">
+                                        <div class="col-xl-4 col-lg-3 col-md-4 col-6">
                                             <div class="ctlg-block">
                                                 <div class="ctlg-img">
                                                     <a href="#!" class="fav-icon">
@@ -552,7 +559,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4">
+                                        <div class="col-xl-4 col-lg-3 col-md-4 col-6">
                                             <div class="ctlg-block">
                                                 <div class="ctlg-img">
                                                     <a href="#!" class="fav-icon">
@@ -575,7 +582,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-lg-4">
+                                        <div class="col-xl-4 col-lg-3 col-md-4 col-6">
                                             <div class="ctlg-block">
                                                 <div class="ctlg-img">
                                                     <a href="#!" class="fav-icon">
@@ -597,7 +604,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4">
+                                        <div class="col-xl-4 col-lg-3 col-md-4 col-6">
                                             <div class="ctlg-block">
                                                 <div class="ctlg-img">
                                                     <a href="#!" class="fav-icon">
@@ -618,7 +625,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4">
+                                        <div class="col-xl-4 col-lg-3 col-md-4 col-6">
                                             <div class="ctlg-block">
                                                 <div class="ctlg-img">
                                                     <a href="#!" class="fav-icon">
@@ -642,7 +649,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-lg-4">
+                                        <div class="col-xl-4 col-lg-3 col-md-4 col-6">
                                             <div class="ctlg-block">
                                                 <div class="ctlg-img">
                                                     <a href="#!" class="fav-icon">
@@ -665,7 +672,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4">
+                                        <div class="col-xl-4 col-lg-3 col-md-4 col-6">
                                             <div class="ctlg-block">
                                                 <div class="ctlg-img">
                                                     <a href="#!" class="fav-icon">
@@ -686,7 +693,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4">
+                                        <div class="col-xl-4 col-lg-3 col-md-4 col-6">
                                             <div class="ctlg-block">
                                                 <div class="ctlg-img">
                                                     <a href="#!" class="fav-icon">
@@ -709,7 +716,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-lg-4">
+                                        <div class="col-xl-4 col-lg-3 col-md-4 col-6">
                                             <div class="ctlg-block">
                                                 <div class="ctlg-img">
                                                     <a href="#!" class="fav-icon">
@@ -732,7 +739,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4">
+                                        <div class="col-xl-4 col-lg-3 col-md-4 col-6">
                                             <div class="ctlg-block">
                                                 <div class="ctlg-img">
                                                     <a href="#!" class="fav-icon">
@@ -753,7 +760,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4">
+                                        <div class="col-xl-4 col-lg-3 col-md-4 col-6">
                                             <div class="ctlg-block">
                                                 <div class="ctlg-img">
                                                     <a href="#!" class="fav-icon">
@@ -1213,5 +1220,74 @@
 	<script src="libs/bootstrap5/bootstrap.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/script.js"></script>
+
+	<script>
+		jQuery(document).ready(function() {
+			$('.upper').on('input', setFill);
+			$('.lower').on('input', setFill);
+
+			var max = $('.upper').attr('max');
+			var min = $('.lower').attr('min');
+
+			function setFill(evt) {
+				var valUpper = $('.upper').val();
+				var valLower = $('.lower').val();
+				if (parseFloat(valLower) > parseFloat(valUpper)) {
+					var trade = valLower;
+					valLower = valUpper;
+					valUpper = trade;
+				}
+				
+				var width = valUpper * 100 / max;
+				var left = valLower * 100 / max;
+				$('.fill').css('left', 'calc(' + left + '%)');
+				$('.fill').css('width', width - left + '%');
+				
+				// Update info
+				if (parseInt(valLower) == min) {
+					$('.easy-basket-lower').val('0 ₽');
+				} else {
+					$('.easy-basket-lower').val(parseInt(valLower) + ' ₽');
+				}
+				if (parseInt(valUpper) == max) {
+					$('.easy-basket-upper').val('5000 ₽');
+				} else {
+					$('.easy-basket-upper').val(parseInt(valUpper) + ' ₽');
+				}
+			}
+			
+			$('.easy-basket-filter-info input').keyup(function() {
+				var valUpper = $('.easy-basket-upper').val();
+				var valLower = $('.easy-basket-lower').val();
+				var width = valUpper * 100 / max;
+				var left = valLower * 100 / max;
+				if ( valUpper > 5000 ) {
+					var left = max;
+				}
+				if ( valLower < 0 ) {
+					var left = min;
+				} else if ( valLower > max ) {
+					var left = min;
+				}
+				$('.fill').css('left', 'calc(' + left + '%)');
+				$('.fill').css('width', width - left + '%');
+				// меняем положение ползунков
+				$('.lower').val(valLower);
+				$('.upper').val(valUpper);
+			});
+			$('.easy-basket-filter-info input').focus(function() {
+				$(this).val('₽');
+			});
+			$('.easy-basket-lower').blur(function() {
+				var valLower = $('.lower').val('');
+				$(this).val(Math.floor(valLower));
+			});
+			$('.easy-basket-upper').blur(function() {
+				var valUpper = $('.upper').val('');
+				$(this).val(Math.floor(valUpper));
+			});
+			
+		});
+	</script>
 </body>
 </html>
