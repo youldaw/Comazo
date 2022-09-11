@@ -225,6 +225,28 @@ $(function (){
         }
     });
 
+    $('.cat-top-slide').owlCarousel({
+        loop:false,
+        margin:0,
+        nav:true,
+        dots:false,
+        center: false,
+        smartSpeed:900,
+        items:1,
+        navText: ['<img src="images/slide-left-arrow.svg">','<img src="images/slide-right-arrow.svg">'],
+        responsive:{
+            0:{
+                items:1,
+            },
+            580:{
+                items:1,
+            },
+            1000:{
+                items:1,
+            }
+        }
+    });
+
 
 
     $('.modal-slide').owlCarousel({
