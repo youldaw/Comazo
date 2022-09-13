@@ -25,19 +25,20 @@ $(function (){
 
     $('.size-item').on('click',function(e){
         e.preventDefault();
-        $(this).addClass('active');
+        $(this).toggleClass('active');
         $(this).siblings().removeClass('active');
     });
 
     $('.colors span a').on('click',function(e){
         e.preventDefault();
-        $(this).parent().addClass('active');
+        $(this).parent().toggleClass('active');
         $(this).parent().siblings().removeClass('active');
     });
 
-    $('.modal-body .determine-size p').on('click',function(e){
+    $('.product-img .show-more-btn').on('click',function(e){
         e.preventDefault();
-        $(this).parent().toggleClass('show');
+        $('.product-col').removeClass('hide');
+        $(this).addClass('hide');
     });
 
 
@@ -280,7 +281,7 @@ $(function (){
         loop:true,
         margin:10,
         nav:true,
-        dots:false,
+        dots:true,
         center: false,
         smartSpeed:900,
         items:1,
