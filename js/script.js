@@ -1,4 +1,28 @@
 $(function (){
+
+    var owl = jQuery(".cd-hover-gal");
+      owl.owlCarousel({
+          items: 1,
+          margin: 0,
+          animateOut: 'fadeOut',
+          animateIn:  'fadeIn',
+          smartSpeed: 450,
+      });
+        jQuery(".cd-hover-gal .owl-dot").hover(function() {
+            jQuery(this).trigger("click");
+            }
+        );
+        resize_dots();
+        owl.on("mouseleave", function(){
+            jQuery(this).find(".owl-dot").first().click();
+        });
+        // resize dots from car offers carousel
+        function resize_dots(){
+        var dots=jQuery(".owl-dots");
+        dots.each(function(){
+            jQuery(this).find(".owl-dot").css("width",100/$(this).find(".owl-dot").length+"%");
+        });
+    }
     
     $('.mob-menu-btn, .menu-closer').on('click',function(e){
         e.preventDefault();
@@ -26,13 +50,25 @@ $(function (){
     $('.size-item').on('click',function(e){
         e.preventDefault();
         $(this).toggleClass('active');
-        $(this).siblings().removeClass('active');
+        // $(this).siblings().removeClass('active');
     });
 
     $('.colors span a').on('click',function(e){
         e.preventDefault();
         $(this).parent().toggleClass('active');
-        $(this).parent().siblings().removeClass('active');
+        // $(this).parent().siblings().removeClass('active');
+    });
+
+    $('.line-items, .color-items').on('click',function(e){
+        e.preventDefault();
+        $(this).toggleClass('active');
+        // $(this).siblings().removeClass('active');
+    });
+
+    $('.fSize-items').on('click',function(e){
+        e.preventDefault();
+        $(this).parent().toggleClass('active');
+        // $(this).parent().siblings().removeClass('active');
     });
 
     $('.product-img .show-more-btn').on('click',function(e){
@@ -244,6 +280,28 @@ $(function (){
             },
             1000:{
                 items:1,
+            }
+        }
+    });
+
+    $('.recently-slide').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        dots:false,
+        center: false,
+        smartSpeed:900,
+        items:4,
+        navText: ['<img src="images/slide-left-arrow.svg">','<img src="images/slide-right-arrow.svg">'],
+        responsive:{
+            0:{
+                items:2,
+            },
+            580:{
+                items:3,
+            },
+            1000:{
+                items:4,
             }
         }
     });
