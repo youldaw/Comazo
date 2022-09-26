@@ -4,6 +4,7 @@
 	<link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen">
 	<link rel="stylesheet" type="text/css" href="libs/bootstrap5/bootstrap.min.css" media="screen">
 	<link rel="stylesheet icon" type="text/css" href="css/owl.carousel.min.css" media="screen">
+	<link rel="stylesheet icon" type="text/css" href="css/slick.css" media="screen">
 	<link rel="stylesheet icon" type="text/css" href="css/style.css" media="screen">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
@@ -273,6 +274,10 @@
                     <div class="row">
                         <div class="col-xl-3 col-lg-12 catalog-left-side">
                             <div class="catalog-filter">
+								<div class="for-fixed">
+									<p>Фильтры</p>
+									<a href="#!" class="filter-closed"><img src="images/filter-close-icon.svg" alt=""></a>
+								</div>
                                 <div class="bread-crumbs">
                                     <a href="#!">Comazo</a>
                                     <span>-</span>
@@ -295,23 +300,22 @@
                                     </div>
                                     <div class="accordion-item">
                                       <h2 class="accordion-header" id="panelsStayOpen-headingLine">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseLine" aria-expanded="true" aria-controls="panelsStayOpen-collapseLine">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseLine" aria-expanded="false" aria-controls="panelsStayOpen-collapseLine">
                                             Линия
                                             <img src="images/accordion-arrow.svg" alt="">
                                         </button>
                                       </h2>
-                                      <div id="panelsStayOpen-collapseLine" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingLine">
+                                      <div id="panelsStayOpen-collapseLine" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingLine">
                                         <div class="accordion-body">
                                             <div class="filter-line">
-                                                <a href="#!" class="line-items">Basic</a>
-                                                <a href="#!" class="line-items">Bio</a>
-                                                <a href="#!" class="line-items">Classic</a>
-                                                <a href="#!" class="line-items">Dream</a>
-                                                <a href="#!" class="line-items">Elite</a>
-                                                <a href="#!" class="line-items">New classic</a>
-                                                <a href="#!" class="line-items active">Active</a>
-                                                <a href="#!" class="line-items">Romantic</a>
-                                                <a href="#!" class="line-items">warm</a>
+                                                <a href="#!" class="line-items basic">Basic</a>
+                                                <a href="#!" class="line-items bio">Bio</a>
+                                                <a href="#!" class="line-items classic">Classic</a>
+                                                <a href="#!" class="line-items dream">Dream</a>
+                                                <a href="#!" class="line-items elite">Elite</a>
+                                                <a href="#!" class="line-items newclassic">New classic</a>
+                                                <a href="#!" class="line-items print">Print</a>
+                                                <a href="#!" class="line-items warm">warm</a>
                                             </div>
                                         </div>
                                       </div>
@@ -481,9 +485,9 @@
                                     <div class="top-filter">
                                         <div class="select-filter">
                                             <select name="top-filter-select" id="top-filter-select">
-                                                <option value="По популярности">По популярности</option>
-                                                <option value="По популярности">По популярности 2</option>
-                                                <option value="По популярности">По популярности 3</option>
+                                                <option value="По популярности">Новинки</option>
+                                                <option value="По популярности">По заказам</option>
+                                                <option value="По популярности">Цена</option>
                                             </select>
                                         </div>
                                         <div class="filter-grid">
@@ -1280,7 +1284,7 @@
 										<div class="accordion-item">
 											<h2 class="accordion-header" id="headingSostav">
 											  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSostav" aria-expanded="false" aria-controls="collapseSostav">
-													состав и описание
+												  описание и уход
 												  <img src="images/accordion-arrow.svg" alt="">
 											  </button>
 											</h2>
@@ -1306,7 +1310,7 @@
 										<div class="accordion-item">
 											<h2 class="accordion-header" id="headingItem3">
 											  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseItem3" aria-expanded="false" aria-controls="collapseItem3">
-													Посадка и Размер 3
+													Доставка и оплата
 												  <img src="images/accordion-arrow.svg" alt="">
 											  </button>
 											</h2>
@@ -1319,7 +1323,7 @@
 										<div class="accordion-item">
 											<h2 class="accordion-header" id="headingItem4">
 											  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseItem4" aria-expanded="false" aria-controls="collapseItem4">
-													Размер и посадка 4
+													Дополнить комплект
 												  <img src="images/accordion-arrow.svg" alt="">
 											  </button>
 											</h2>
@@ -1445,6 +1449,7 @@
 	<script src="js/jquery-3.5.1.min.js"></script>
 	<script src="libs/bootstrap5/bootstrap.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/slick.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>

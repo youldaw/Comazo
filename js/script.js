@@ -6,7 +6,7 @@ $(function (){
           margin: 0,
           animateOut: 'fadeOut',
           animateIn:  'fadeIn',
-          smartSpeed: 450,
+          smartSpeed: 250,
       });
         jQuery(".cd-hover-gal .owl-dot").hover(function() {
             jQuery(this).trigger("click");
@@ -29,7 +29,7 @@ $(function (){
         $('.navbar').toggleClass('active');
     });
 
-    $('.mob-filter-btn').on('click',function(e){
+    $('.mob-filter-btn, .filter-closed').on('click',function(e){
         e.preventDefault();
         $(this).toggleClass('active');
         $('.catalog-filter').toggleClass('active');
@@ -59,6 +59,17 @@ $(function (){
         // $(this).parent().siblings().removeClass('active');
     });
 
+    $('.floor-items, .temp-items, .active-items, .fStyle-block').on('click',function(e){
+        e.preventDefault();
+        $(this).toggleClass('active');
+    });
+
+    $('.catPro-tags a').on('click',function(e){
+        e.preventDefault();
+        $(this).toggleClass('active');
+        $(this).siblings().removeClass('active');
+    });
+
     $('.line-items, .color-items').on('click',function(e){
         e.preventDefault();
         $(this).toggleClass('active');
@@ -76,6 +87,15 @@ $(function (){
         $('.product-col').removeClass('hide');
         $(this).addClass('hide');
     });
+
+
+    $('.account-menu .nav-link').on('click',function(e){
+        e.preventDefault();
+        $(this).parent().toggleClass('active');
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
+    });
+    
 
 
     $('.header-top-slide').owlCarousel({
@@ -134,51 +154,71 @@ $(function (){
         }
     });
 
-    $('.line-slide').owlCarousel({
-        loop:true,
-        margin:10,
-        nav:true,
-        dots:false,
-        center: false,
-        smartSpeed:900,
-        items:4,
-        navText: ['<img src="images/slide-left-arrow.svg">','<img src="images/slide-right-arrow.svg">'],
-        responsive:{
-            0:{
-                items:2,
-                loop:false,
-            },
-            768:{
-                items:3,
-            },
-            1000:{
-                items:4,
+
+    $('.line-slide').slick({
+        infinite: false,
+        slidesToShow: 4, // Shows a three slides at a time
+        slidesToScroll: 1, // When you click an arrow, it scrolls 1 slide at a time
+        arrows: true, // Adds arrows to sides of slider
+        dots: false, // Adds the dots on the bottom
+        prevArrow: '<button class="slide-arrow prev-arrow"></button>',
+        nextArrow: '<button class="slide-arrow next-arrow"></button>',
+        responsive: [{
+            breakpoint: 1000,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1
             }
-        }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 0,
+            settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+            },
+            
+        }]
     });
 
-    $('.resp-slide').owlCarousel({
-        loop:true,
-        margin:10,
-        nav:true,
-        dots:false,
-        center: false,
-        smartSpeed:900,
-        items:4,
-        navText: ['<img src="images/slide-left-arrow.svg">','<img src="images/slide-right-arrow.svg">'],
-        responsive:{
-            0:{
-                items:2,
-                loop:false,
-            },
-            768:{
-                items:3,
-            },
-            1000:{
-                items:4,
+    $('.resp-slide').slick({
+        infinite: false,
+        slidesToShow: 4, // Shows a three slides at a time
+        slidesToScroll: 1, // When you click an arrow, it scrolls 1 slide at a time
+        arrows: true, // Adds arrows to sides of slider
+        dots: false, // Adds the dots on the bottom
+        prevArrow: '<button class="slide-arrow prev-arrow"></button>',
+        nextArrow: '<button class="slide-arrow next-arrow"></button>',
+        responsive: [{
+            breakpoint: 1000,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1
             }
-        }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 0,
+            settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+            },
+            
+        }]
     });
+
 
     $(window).on('load resize', function () {
         if ($(this).width() > 1025) {
@@ -297,10 +337,13 @@ $(function (){
             0:{
                 items:2,
             },
-            580:{
-                items:3,
+            768:{
+                items:2,
             },
             1000:{
+                items:3,
+            },
+            1001:{
                 items:4,
             }
         }

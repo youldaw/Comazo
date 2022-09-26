@@ -4,6 +4,7 @@
 	<link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen">
 	<link rel="stylesheet" type="text/css" href="libs/bootstrap5/bootstrap.min.css" media="screen">
 	<link rel="stylesheet icon" type="text/css" href="css/owl.carousel.min.css" media="screen">
+	<link rel="stylesheet icon" type="text/css" href="css/slick.css" media="screen">
 	<link rel="stylesheet icon" type="text/css" href="css/style.css" media="screen">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
@@ -209,20 +210,44 @@
             <section class="account-sec">
                 <div class="container">
                     <div class="row d-flex align-items-start">
-                        <div class="col-lg-3 col-sm-3 account-menu nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                            <div class="title"><h2>Личный кабинет</h2></div>
+                        <div class="col-lg-3 col-md-3 col-sm-12 col-12 account-menu-col">
+                            <div class="title">
+								<h2>Личный кабинет</h2>
+								<span class="mob bread-line">-</span>
+							</div>
 
-                            <button class="nav-link active" id="v-pills-basic-tab" data-bs-toggle="pill" data-bs-target="#v-pills-basic" type="button" role="tab" aria-controls="v-pills-basic" aria-selected="true">Основное</button>
-                            <button class="nav-link" id="v-pills-my-tab" data-bs-toggle="pill" data-bs-target="#v-pills-my" type="button" role="tab" aria-controls="v-pills-my" aria-selected="false">Мои данные</button>
-                            <button class="nav-link" id="v-pills-history-tab" data-bs-toggle="pill" data-bs-target="#v-pills-history" type="button" role="tab" aria-controls="v-pills-history" aria-selected="false">История заказов</button>
-                            <button class="nav-link" id="v-pills-bonus-tab" data-bs-toggle="pill" data-bs-target="#v-pills-bonus" type="button" role="tab" aria-controls="v-pills-bonus" aria-selected="false">Бонусная система</button>
+                            <div class="account-menu nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+								<button class="nav-link active" id="v-pills-basic-tab" data-bs-toggle="pill" data-bs-target="#v-pills-basic" type="button" role="tab" aria-controls="v-pills-basic" aria-selected="true">
+									Основное
+									<span class="mob arrow"><img src="images/accordion-arrow.svg" alt=""></span>
+								</button>
+								<button class="nav-link" id="v-pills-my-tab" data-bs-toggle="pill" data-bs-target="#v-pills-my" type="button" role="tab" aria-controls="v-pills-my" aria-selected="false">
+									Мои данные
+									<span class="mob arrow"><img src="images/accordion-arrow.svg" alt=""></span>
+								</button>
+								<button class="nav-link" id="v-pills-history-tab" data-bs-toggle="pill" data-bs-target="#v-pills-history" type="button" role="tab" aria-controls="v-pills-history" aria-selected="false">
+									История заказов
+									<span class="mob arrow"><img src="images/accordion-arrow.svg" alt=""></span>
+								</button>
+								<button class="nav-link" id="v-pills-bonus-tab" data-bs-toggle="pill" data-bs-target="#v-pills-bonus" type="button" role="tab" aria-controls="v-pills-bonus" aria-selected="false">
+									Бонусная система
+									<span class="mob arrow"><img src="images/accordion-arrow.svg" alt=""></span>
+								</button>
 
-                            <button class="nav-link" id="v-pills-save-tab" data-bs-toggle="pill" data-bs-target="#v-pills-save" type="button" role="tab" aria-controls="v-pills-save" aria-selected="false">Сохраненные товары</button>
-                            <button class="nav-link" id="v-pills-review-tab" data-bs-toggle="pill" data-bs-target="#v-pills-review" type="button" role="tab" aria-controls="v-pills-review" aria-selected="false">Отзывы и вопросы</button>
+								<button class="nav-link" id="v-pills-save-tab" data-bs-toggle="pill" data-bs-target="#v-pills-save" type="button" role="tab" aria-controls="v-pills-save" aria-selected="false">
+									Сохраненные товары
+									<span class="mob arrow"><img src="images/accordion-arrow.svg" alt=""></span>
+								</button>
+								<button class="nav-link" id="v-pills-review-tab" data-bs-toggle="pill" data-bs-target="#v-pills-review" type="button" role="tab" aria-controls="v-pills-review" aria-selected="false">
+									Отзывы и вопросы
+									<span class="mob arrow"><img src="images/accordion-arrow.svg" alt=""></span>
+								</button>
 
-                            <a href="#!" class="account-exit nav-link">Выйти</a>
+								<a href="#!" class="account-exit nav-link">Выйти</a>
+
+							</div>
                         </div>
-                        <div class="col-lg-9 col-sm-9 account-content tab-content" id="v-pills-tabContent">
+                        <div class="col-lg-9 col-md-9 col-sm-12 col-12 account-content tab-content" id="v-pills-tabContent">
                             <div class="tab-pane fade show active" id="v-pills-basic" role="tabpanel" aria-labelledby="v-pills-basic-tab" tabindex="0">
                                 <div class="account-basic-empty">
 									<div class="row">
@@ -242,7 +267,7 @@
 									</div>
 	
 									<div class="row">
-										<div class="col-lg-7">
+										<div class="col-xl-7 col-lg-6">
 											<div class="account-delivery-address border-style">
 												<div class="title">
 													<h2>Адрес доставки</h2>
@@ -253,7 +278,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-lg-5 pl-0">
+										<div class="col-xl-5 col-lg-6 pl-0">
 											<div class="account-bonus-system border-style">
 												<div class="title">
 													<h2>Бонусная система</h2>
@@ -340,11 +365,11 @@
 													<table class="table">
 														<thead>
 														  <tr>
-															<th>№</th>
-															<th>Товары</th>
-															<th>Сумма</th>
-															<th>Дата</th>
-															<th>Отслеживание</th>
+															<th class="th-num">№</th>
+															<th class="th-product">Товары</th>
+															<th class="th-sum">Сумма</th>
+															<th class="th-date">Дата</th>
+															<th class="th-track">Отслеживание</th>
 														  </tr>
 														</thead>
 														<tbody>
@@ -352,17 +377,18 @@
 																<td class="all-order-id">2976</td>
 																<td>
 																	<div class="table-product">
-																		<span><img src="images/catalog-product-img8.jpg" alt=""></span>
-																		<span><img src="images/product-image2.jpg" alt=""></span>
-																		<span><img src="images/catalog-product-img1.jpg" alt=""></span>
+																		<span class="tab-one-pic"><img src="images/catalog-product-img8.jpg" alt=""></span>
+																		<span class="tab-two-pic"><img src="images/product-image2.jpg" alt=""></span>
+																		<span class="tab-three-pic"><img src="images/catalog-product-img1.jpg" alt=""></span>
 																	</div>
 																</td>
 																<td class="all-order-price">3490 ₽</td>
-																<td class="alll-order-date">14.07.2022</td>
+																<td class="all-order-date">14.07.2022</td>
 																<td>
 																	<div class="tracking">
 																		<p>трек-код:</p>
 																		<span class="tracking-tag coming-soon">Скоро появится</span>
+																		<a href="#!" class="tab more-info">Подробнее</a>
 																	</div>
 																</td>
 															</tr>
@@ -371,18 +397,19 @@
 																<td class="all-order-id">2813</td>
 																<td>
 																	<div class="table-product">
-																		<span><img src="images/catalog-product-img8.jpg" alt=""></span>
-																		<span><img src="images/product-image2.jpg" alt=""></span>
-																		<span><img src="images/catalog-product-img1.jpg" alt=""></span>
-																		<span class="count-img"><img src="images/product-image6.jpg" alt=""></span>
+																		<span class="tab-one-pic"><img src="images/catalog-product-img8.jpg" alt=""></span>
+																		<span class="tab-two-pic"><img src="images/product-image2.jpg" alt=""></span>
+																		<span class="tab-three-pic"><img src="images/catalog-product-img1.jpg" alt=""></span>
+																		<span class="tab-four-pic count-img"><img src="images/product-image6.jpg" alt=""></span>
 																	</div>
 																</td>
 																<td class="all-order-price">4950 ₽</td>
-																<td class="alll-order-date">31.12.2021</td>
+																<td class="all-order-date">31.12.2021</td>
 																<td>
 																	<div class="tracking">
 																		<p>статус:</p>
 																		<span class="tracking-tag on-road">RU07198505-39A</span>
+																		<a href="#!" class="tab more-info">Подробнее</a>
 																	</div>
 																</td>
 															</tr>
@@ -394,7 +421,7 @@
 									</div>
 	
 									<div class="row">
-										<div class="col-lg-7">
+										<div class="col-xl-7 col-lg-6">
 											<div class="account-delivery-address border-style basic">
 												<div class="title">
 													<h2>Адрес доставки</h2>
@@ -409,7 +436,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-lg-5 pl-0">
+										<div class="col-xl-5 col-lg-6 pl-0">
 											<div class="account-bonus-system border-style basic">
 												<div class="title">
 													<h2>Бонусная система</h2>
@@ -487,39 +514,39 @@
                             </div>
                             <div class="tab-pane fade" id="v-pills-my" role="tabpanel" aria-labelledby="v-pills-my-tab" tabindex="0">
                                 <div class="row">
-                                    <div class="col-lg-6">
+                                    <div class="col-xl-6 col-lg-12">
                                         <div class="account-my border-style">
                                             <div class="title">
                                                 <h2>Мои данные</h2>
                                             </div>
                                             <form action="#!" method="" id="account-my-form">
                                                 <div class="row">
-                                                    <div class="col-sm-6">
+                                                    <div class="col-xl-6 col-lg-4 col-md-6 col-6 col-one">
                                                         <div class="form-group">
                                                             <input type="text" name="name" id="name" placeholder="Имя">
                                                         </div>
                                                     </div>
-                                                    <div class="col-sm-6">
+                                                    <div class="col-xl-6 col-lg-4 col-md-6 col-6 col-two">
                                                         <div class="form-group">
                                                             <input type="text" name="surname" id="surname" placeholder="Фамилия">
                                                         </div>
                                                     </div>
-                                                    <div class="col-sm-12">
+                                                    <div class="col-xl-12 col-lg-4 col-md-12 col-three">
                                                         <div class="form-group">
                                                             <input type="text" name="birth-date" id="birth-date" placeholder="Дата рождения">
                                                         </div>
                                                     </div>
-                                                    <div class="col-sm-12">
+                                                    <div class="col-xl-12 col-lg-6 col-md-12 col-four">
                                                         <div class="form-group">
                                                             <input type="email" name="email" id="email" placeholder="Email">
                                                         </div>
                                                     </div>
-                                                    <div class="col-sm-12">
+                                                    <div class="col-xl-12 col-lg-6 col-md-12 col-five">
                                                         <div class="form-group">
                                                             <input type="tel" name="phone" id="phone" placeholder="Номер телефона">
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-12">
+                                                    <div class="col-lg-12 col-six">
                                                         <div class="account-check">
                                                             <label class="control control--checkbox">Женский пол
                                                                 <input type="radio" name="radio" id="female"/>
@@ -541,7 +568,7 @@
                                             </form>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6">
+                                    <div class="col-xl-6 col-lg-12">
                                         <div class="account-delivery-data border-style">
                                             <div class="title">
                                                 <h2>Данные доставки</h2>
@@ -568,26 +595,26 @@
 											<div class="table-all-order">
 												<table class="table">
 													<thead>
-													  <tr>
-														<th>№</th>
-														<th>Товары</th>
-														<th>Сумма</th>
-														<th>Дата</th>
-														<th>Отслеживание</th>
-													  </tr>
+														<tr>
+															<th class="th-num">№</th>
+															<th class="th-product">Товары</th>
+															<th class="th-sum">Сумма</th>
+															<th class="th-date">Дата</th>
+															<th class="th-track">Отслеживание</th>
+														</tr>
 													</thead>
 													<tbody>
 													  	<tr>
 															<td class="all-order-id">3151</td>
 															<td>
 																<div class="table-product">
-																	<span><img src="images/catalog-product-img8.jpg" alt=""></span>
-																	<span><img src="images/product-image2.jpg" alt=""></span>
-																	<span><img src="images/catalog-product-img1.jpg" alt=""></span>
+																	<span class="tab-one-pic"><img src="images/catalog-product-img8.jpg" alt=""></span>
+																	<span class="tab-two-pic"><img src="images/product-image2.jpg" alt=""></span>
+																	<span class="tab-three-pic"><img src="images/catalog-product-img1.jpg" alt=""></span>
 																</div>
 															</td>
 															<td class="all-order-price">2790 ₽</td>
-															<td class="alll-order-date">21.08.2022</td>
+															<td class="all-order-date">21.08.2022</td>
 															<td>
 																<div class="tracking">
 																	<p>трек-код:</p>
@@ -600,14 +627,14 @@
 															<td class="all-order-id">2976</td>
 															<td>
 																<div class="table-product">
-																	<span><img src="images/catalog-product-img8.jpg" alt=""></span>
-																	<span><img src="images/product-image2.jpg" alt=""></span>
-																	<span><img src="images/catalog-product-img1.jpg" alt=""></span>
-																	<span><img src="images/product-image6.jpg" alt=""></span>
+																	<span class="tab-one-pic"><img src="images/catalog-product-img8.jpg" alt=""></span>
+																	<span class="tab-two-pic"><img src="images/product-image2.jpg" alt=""></span>
+																	<span class="tab-three-pic"><img src="images/catalog-product-img1.jpg" alt=""></span>
+																	<span class="tab-four-pic"><img src="images/product-image6.jpg" alt=""></span>
 																</div>
 															</td>
 															<td class="all-order-price">3490 ₽</td>
-															<td class="alll-order-date">14.07.2022</td>
+															<td class="all-order-date">14.07.2022</td>
 															<td>
 																<div class="tracking">
 																	<p>трек-код:</p>
@@ -620,14 +647,14 @@
 															<td class="all-order-id">2813</td>
 															<td>
 																<div class="table-product">
-																	<span><img src="images/catalog-product-img8.jpg" alt=""></span>
-																	<span><img src="images/product-image2.jpg" alt=""></span>
-																	<span><img src="images/catalog-product-img1.jpg" alt=""></span>
-																	<span><img src="images/product-image6.jpg" alt=""></span>
+																	<span class="tab-one-pic"><img src="images/catalog-product-img8.jpg" alt=""></span>
+																	<span class="tab-two-pic"><img src="images/product-image2.jpg" alt=""></span>
+																	<span class="tab-three-pic"><img src="images/catalog-product-img1.jpg" alt=""></span>
+																	<span class="tab-four-pic"><img src="images/product-image6.jpg" alt=""></span>
 																</div>
 															</td>
 															<td class="all-order-price">4950 ₽</td>
-															<td class="alll-order-date">31.12.2021</td>
+															<td class="all-order-date">31.12.2021</td>
 															<td>
 																<div class="tracking">
 																	<p>трек-код:</p>
@@ -640,12 +667,12 @@
 															<td class="all-order-id">0150</td>
 															<td>
 																<div class="table-product">
-																	<span><img src="images/catalog-product-img8.jpg" alt=""></span>
-																	<span><img src="images/product-image2.jpg" alt=""></span>
+																	<span class="tab-one-pic"><img src="images/catalog-product-img8.jpg" alt=""></span>
+																	<span class="tab-two-pic"><img src="images/product-image2.jpg" alt=""></span>
 																</div>
 															</td>
 															<td class="all-order-price">1480 ₽</td>
-															<td class="alll-order-date">01.03.1963</td>
+															<td class="all-order-date">01.03.1963</td>
 															<td>
 																<div class="tracking">
 																	<p>трек-код:</p>
@@ -788,14 +815,14 @@
                             </div>
                             <div class="tab-pane fade" id="v-pills-bonus" role="tabpanel" aria-labelledby="v-pills-bonus-tab" tabindex="0">
 								<div class="row">
-									<div class="col-xl-8 col-lg-6 col-md-12">
+									<div class="col-xl-8 col-lg-6 col-md-12 pr-10">
 										<div class="account-bonus border-style">
 											<div class="title">
 												<h2>как работает Бонусная система?</h2>
 											</div>
 											<div class="row bonus-system">
-												<div class="col-lg-3 col-md-6 col-6">
-													<div class="bonus-system-block">
+												<div class="col-xl-3 col-lg-6 col-md-6 col-6">
+													<div class="bonus-system-block mb-30">
 														<div class="bonus-icon">
 															<img src="images/bonus-icon1.png" alt="">
 														</div>
@@ -805,8 +832,8 @@
 														</div>
 													</div>
 												</div>
-												<div class="col-lg-3 col-md-6 col-6 pl-0">
-													<div class="bonus-system-block">
+												<div class="col-xl-3 col-lg-6 col-md-6 col-6 pl-0">
+													<div class="bonus-system-block mb-30">
 														<div class="bonus-icon">
 															<img src="images/bonus-icon2.png" alt="">
 														</div>
@@ -816,7 +843,7 @@
 														</div>
 													</div>
 												</div>
-												<div class="col-lg-3 col-md-6 col-6 pl-0">
+												<div class="col-xl-3 col-lg-6 col-md-6 col-6 pl-0">
 													<div class="bonus-system-block">
 														<div class="bonus-icon">
 															<img src="images/bonus-icon3.png" alt="">
@@ -827,7 +854,7 @@
 														</div>
 													</div>
 												</div>
-												<div class="col-lg-3 col-md-6 col-6 pl-0">
+												<div class="col-xl-3 col-lg-6 col-md-6 col-6 pl-0">
 													<div class="bonus-system-block">
 														<div class="bonus-icon">
 															<img src="images/bonus-icon4.png" alt="">
@@ -911,7 +938,7 @@
 										</div>
 									</div>
 
-									<div class="col-xl-4 col-lg-6 col-md-12">
+									<div class="col-xl-4 col-lg-6 col-md-12 pl-0">
 										<div class="bonus-balance border-style">
 											<div class="title d-flex">
 												<h2>Баланс:</h2>
@@ -960,7 +987,7 @@
 										</div>
 									</div>
 
-									<div class="col-xl-8 col-lg-12 medium">
+									<div class="col-xl-8 col-lg-12 lg">
 										<div class="operations-history border-style">
 											<div class="title">
 												<h2>История Операций</h2>
@@ -1046,7 +1073,7 @@
 									</div>
 
 									<div class="row">
-										<div class="col-xl-3 col-lg-4 col-md-6 col-6">
+										<div class="col-xl-3 col-lg-4 col-md-6 col-6 pl-5 pr-5">
 											<div class="wishlist-block cd-offer-blk sale-offer">
 												<span class="fav-icon">
 													<svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1090,7 +1117,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-xl-3 col-lg-4 col-md-6 col-6">
+										<div class="col-xl-3 col-lg-4 col-md-6 col-6 pl-5 pr-5">
 											<div class="whishlist-block cd-offer-blk sale-offer">
 												<span class="fav-icon">
 													<svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1134,7 +1161,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-xl-3 col-lg-4 col-md-6 col-6">
+										<div class="col-xl-3 col-lg-4 col-md-6 col-6 pl-5 pr-5">
 											<div class="wishlist-block cd-offer-blk sale-offer not-available">
 											    <div class="wishlist-img">
 													<img src="images/wishlist-img3.jpg" alt="car-photos" class="img-responsive">
@@ -1162,7 +1189,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-xl-3 col-lg-4 col-md-6 col-6">
+										<div class="col-xl-3 col-lg-4 col-md-6 col-6 pl-5 pr-5">
 											<div class="wishlist-block cd-offer-blk sale-offer">
 												<span class="fav-icon">
 													<svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1207,7 +1234,7 @@
 											</div>
 										</div>
 
-										<div class="col-xl-3 col-lg-4 col-md-6 col-6">
+										<div class="col-xl-3 col-lg-4 col-md-6 col-6 pl-5 pr-5">
 											<div class="wishlist-block cd-offer-blk sale-offer">
 												<span class="fav-icon">
 													<svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1251,7 +1278,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-xl-3 col-lg-4 col-md-6 col-6">
+										<div class="col-xl-3 col-lg-4 col-md-6 col-6 pl-5 pr-5">
 											<div class="wishlist-block cd-offer-blk sale-offer">
 												<span class="fav-icon">
 													<svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1295,7 +1322,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-xl-3 col-lg-4 col-md-6 col-6">
+										<div class="col-xl-3 col-lg-4 col-md-6 col-6 pl-5 pr-5">
 											<div class="wishlist-block cd-offer-blk sale-offer">
 												<span class="fav-icon">
 													<svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1339,7 +1366,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-xl-3 col-lg-4 col-md-6 col-6">
+										<div class="col-xl-3 col-lg-4 col-md-6 col-6 pl-5 pr-5">
 											<div class="wishlist-block cd-offer-blk sale-offer">
 												<span class="fav-icon">
 													<svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1384,7 +1411,7 @@
 											</div>
 										</div>
 
-										<div class="col-xl-3 col-lg-4 col-md-6 col-6">
+										<div class="col-xl-3 col-lg-4 col-md-6 col-6 pl-5 pr-5 for-tab">
 											<div class="wishlist-block cd-offer-blk sale-offer">
 												<span class="fav-icon">
 													<svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1428,7 +1455,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-xl-3 col-lg-4 col-md-6 col-6">
+										<div class="col-xl-3 col-lg-4 col-md-6 col-6 pl-5 pr-5 for-tab">
 											<div class="wishlist-block cd-offer-blk sale-offer">
 												<span class="fav-icon">
 													<svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1472,7 +1499,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-xl-3 col-lg-4 col-md-6 col-6">
+										<div class="col-xl-3 col-lg-4 col-md-6 col-6 pl-5 pr-5 for-tab">
 											<div class="wishlist-block cd-offer-blk sale-offer not-available">
 											    <div class="wishlist-img">
 													<img src="images/wishlist-img2.jpg" alt="car-photos" class="img-responsive">
@@ -1500,7 +1527,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-xl-3 col-lg-4 col-md-6 col-6">
+										<div class="col-xl-3 col-lg-4 col-md-6 col-6 pl-5 pr-5 for-tab">
 											<div class="wishlist-block cd-offer-blk sale-offer">
 												<span class="fav-icon">
 													<svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1545,7 +1572,7 @@
 											</div>
 										</div>
 
-										<div class="col-xl-3 col-lg-4 col-md-6 col-6">
+										<div class="col-xl-3 col-lg-4 col-md-6 col-6 pl-5 pr-5 for-pc">
 											<div class="wishlist-block cd-offer-blk sale-offer">
 												<span class="fav-icon">
 													<svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1589,7 +1616,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-xl-3 col-lg-4 col-md-6 col-6">
+										<div class="col-xl-3 col-lg-4 col-md-6 col-6 pl-5 pr-5 for-pc">
 											<div class="wishlist-block cd-offer-blk sale-offer">
 												<span class="fav-icon">
 													<svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1633,7 +1660,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-xl-3 col-lg-4 col-md-6 col-6">
+										<div class="col-xl-3 col-lg-4 col-md-6 col-6 pl-5 pr-5 for-pc">
 											<div class="wishlist-block cd-offer-blk sale-offer">
 												<span class="fav-icon">
 													<svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1677,7 +1704,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-xl-3 col-lg-4 col-md-6 col-6">
+										<div class="col-xl-3 col-lg-4 col-md-6 col-6 pl-5 pr-5 for-pc">
 											<div class="whishlist-block cd-offer-blk sale-offer">
 												<span class="fav-icon">
 													<svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1733,7 +1760,7 @@
 
                             <div class="tab-pane fade" id="v-pills-review" role="tabpanel" aria-labelledby="v-pills-review-tab" tabindex="0">
 								<div class="row">
-									<div class="col-lg-6">
+									<div class="col-lg-6 pr-5">
 										<div class="account-my-reviews border-style">
 											<div class="title">
 												<h2>Мои отзывы</h2>
@@ -1744,7 +1771,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-lg-6">
+									<div class="col-lg-6 pl-5">
 										<div class="account-my-question border-style">
 											<div class="title">
 												<h2>Мои вопросы</h2>
@@ -2132,7 +2159,7 @@
 										<div class="accordion-item">
 											<h2 class="accordion-header" id="headingSostav">
 											  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSostav" aria-expanded="false" aria-controls="collapseSostav">
-													состав и описание
+												  описание и уход
 												  <img src="images/accordion-arrow.svg" alt="">
 											  </button>
 											</h2>
@@ -2158,7 +2185,7 @@
 										<div class="accordion-item">
 											<h2 class="accordion-header" id="headingItem3">
 											  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseItem3" aria-expanded="false" aria-controls="collapseItem3">
-													Посадка и Размер 3
+													Доставка и оплата
 												  <img src="images/accordion-arrow.svg" alt="">
 											  </button>
 											</h2>
@@ -2171,7 +2198,7 @@
 										<div class="accordion-item">
 											<h2 class="accordion-header" id="headingItem4">
 											  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseItem4" aria-expanded="false" aria-controls="collapseItem4">
-													Размер и посадка 4
+													Дополнить комплект
 												  <img src="images/accordion-arrow.svg" alt="">
 											  </button>
 											</h2>
@@ -2297,6 +2324,7 @@
 	<script src="js/jquery-3.5.1.min.js"></script>
 	<script src="libs/bootstrap5/bootstrap.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/slick.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>
