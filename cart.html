@@ -18,13 +18,15 @@
                 <div class="row">
                     <div class="col-lg-12 basket-menu">
                         <div class="back">
-                            <a href="#!">ВЕРНУТЬСЯ К ПОКУПКАМ</a>
+                            <a href="#!" class="pc">ВЕРНУТЬСЯ К ПОКУПКАМ</a>
+							<a href="#!" class="mob back-btn">назад</a>
                         </div>
                         <div class="basket-logo">
                             <a href="#!"><img src="images/head-logo.png" alt=""></a>
                         </div>
                         <div class="need-help">
-                            <p>НУЖНА ПОМОЩЬ? <a href="tel:+44 (0)115 973 7860">+44 (0)115 973 7860</a></p>
+                            <p class="pc">НУЖНА ПОМОЩЬ? <a href="tel:+44 (0)115 973 7860">+44 (0)115 973 7860</a></p>
+							<a href="#!" class="mob support">поддержка</a>
                         </div>
                     </div>
                 </div>
@@ -35,7 +37,7 @@
             <section class="basket-sec">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xl-8">
+                        <div class="col-xl-8 col-lg-8 pr-5 basket-content-left">
                             <div class="basket-block border-style">
                                 <div class="title">
                                     <h2>ваша Корзина</h2>
@@ -71,11 +73,11 @@
                                         </div>
                                         <div class="col-lg-6 col-sm-6 p-0">
                                             <div class="row cart-col">
-                                                <div class="col-sm-6 col-7 basket-info-price">
+                                                <div class="col-sm-6 col-5 basket-info-price">
                                                     <del>1499</del>
                                                     <span>859 ₽</span>
                                                 </div>
-                                                <div class="col-sm-6 col-5 basket-info-count">
+                                                <div class="col-sm-6 col-7 basket-info-count">
                                                     <div class="count">
                                                         <span class="minus">-</span>
                                                         <input type='number' min='0' max='1000' step='1' value='1'>
@@ -102,10 +104,10 @@
                                         </div>
                                         <div class="col-lg-6 col-sm-6 p-0">
                                             <div class="row cart-col">
-                                                <div class="col-sm-6 col-7 basket-info-price">
+                                                <div class="col-sm-6 col-5 basket-info-price">
                                                     <p>1419 ₽</p>
                                                 </div>
-                                                <div class="col-sm-6 col-5 basket-info-count">
+                                                <div class="col-sm-6 col-7 basket-info-count">
                                                     <div class="count">
                                                         <span class="minus">-</span>
                                                         <input type='number' min='0' max='1000' step='1' value='1'>
@@ -134,8 +136,8 @@
 
                            <div class="basket-personal-payment">
                                 <div class="row">
-                                    <div class="col-lg-6 pr-5">
-                                        <div class="basket-personal-data border-style mt-2">
+                                    <div class="col-lg-6 col-md-6 pr-5 personal-col">
+                                        <div class="basket-personal-data border-style mt-2 for-height">
                                             <div class="title">
                                                 <h2>Получатель</h2>
                                                 <a href="#!">Изменить</a>
@@ -164,8 +166,8 @@
                                             </form>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 pl-5">
-                                        <div class="basket-payment-method border-style mt-2">
+                                    <div class="col-lg-6 col-md-6 pl-5 payment-col">
+                                        <div class="basket-payment-method border-style mt-2 for-height">
                                             <div class="title">
                                                 <h2>Способ Оплаты</h2>
                                             </div>
@@ -194,59 +196,108 @@
                            </div>
                         </div>
 
-                        <div class="col-xl-4">
-                            <div class="basket-side border-style">
-                                <div class="basket-side-top">
-                                    <div class="basket-side-item">
-                                        <h2>Итого </h2>
-                                        <div class="total-sum">2799 ₽ </div>
-                                    </div>
-                                    <div class="basket-side-item">
-                                        <p>Товары, 2 шт.</p>
-                                        <span>3599 ₽</span>
-                                    </div>
-                                    <div class="basket-side-item">
-                                        <p>Скидка</p>
-                                        <span>-799 ₽</span>
-                                    </div>
-                                </div>
+                        <div class="col-xl-4 col-lg-4 pl-5 basket-content-right">
+							<div class="row">
+								<div class="col-lg-12 col-md-6 basket-side-col">
+									<div class="basket-side border-style">
+										<div class="basket-side-top">
+											<div class="basket-side-item">
+												<h2>Итого </h2>
+												<div class="total-sum">2799 ₽ </div>
+											</div>
+											<div class="basket-side-item">
+												<p>Товары, 2 шт.</p>
+												<span>3599 ₽</span>
+											</div>
+											<div class="basket-side-item">
+												<p>Скидка</p>
+												<span>-799 ₽</span>
+											</div>
+										</div>
+		
+										<div class="accordion accordion-flush" id="accordionFlushExample">
+											<div class="accordion-item">
+											  <h2 class="accordion-header" id="flush-headingOne">
+												<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+													Промокод и бонусная система
+													<img src="images/accordion-arrow.svg" alt="">
+												</button>
+											  </h2>
+											  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+												<div class="accordion-body">
+													<form action="#!" id="promo-form">
+														<div class="promo-block">
+															<input type="text" name="promo" id="promo" placeholder="Промокод" required>
+															<div class="promo-info">
+																<div class="promo-info-text">
+																	<p>Текущий баланс: <span>420</span> баллов</p>
+																	<p>Будет начислено: <span>+128</span> баллов</p>
+																</div>
+																<button type="submit" class="promo-btn">списать баллы</button>
+															</div>
+														</div>
+													</form>
+												</div>
+											  </div>
+											</div>
+										</div>
+		
+										<div class="basket-side-selivery">
+											<p>Доставка: <a href="#!">Выберите адрес</a></p>
+		
+											<button type="submit" id="basket-order" class="blue-btn">Оформить заказ</button>
+		
+											<label class="control control--checkbox">
+												<input type="checkbox" name="checkbox" checked="checked"/>
+												<div class="control__indicator"></div>
+		
+												<span>Согласен с <a href="#!">условиями пользования торговой площадки</a> и <a href="#!">правилами возврата</a>.</span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-12 col-md-6 basket-fixed-col">
+									<div class="order-fixed-block border-style mt-2">
+										<a href="#!" class="close-icon"><img src="images/menu-close-icon.svg" alt=""></a>
+										<p>Войдите или зарегистрируйтесь, чтобы оплачивать до 30% <a href="#!">бонусными баллами</a></p>
+										<form action="#!">
+											<input type="email" name="email" id="email" placeholder="Email" required>
+											<button type="submit" id="order-fixed-btn">далее</button>
+										</form>
+									</div>
 
-                                <div class="accordion accordion-flush" id="accordionFlushExample">
-                                    <div class="accordion-item">
-                                      <h2 class="accordion-header" id="flush-headingOne">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                            Промокод и бонусная система
-                                            <img src="images/accordion-arrow.svg" alt="">
-                                        </button>
-                                      </h2>
-                                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-                                      </div>
-                                    </div>
-                                </div>
+									<div class="email-not-reg order-fixed-block border-style mt-2">
+										<a href="#!" class="close-icon"><img src="images/menu-close-icon.svg" alt=""></a>
+										<p>Почти готово! До регистрации в бонусной системе остался один шаг</p>
+										<form action="#!">
+											<input type="email" name="email-not-reg" id="email-not-reg" value="real@client.com">
+											<div class="order-fixed-pass">
+												<input type="password" id="password-reg" name="password-reg" placeholder="Пароль">
+												<input type="password" id="confirm-password-reg" name="confirm-password-reg" placeholder="Повторите пароль">
+											</div>
+											<div class="order-fixed-login">
+												<button type="submit" id="create-account" class="blue-btn">Создать аккаунт</button>
+												<p>Регистрируясь, я соглашаюсь с <a href="#!">политикой обработки данных.</a></p>
+											</div>
+										</form>
+									</div>
 
-                                <div class="basket-side-selivery">
-                                    <p>Доставка: <a href="#!">Выберите адрес</a></p>
-
-                                    <button type="submit" id="basket-order" class="blue-btn">Оформить заказ</button>
-
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" name="checkbox" checked="checked"/>
-                                        <div class="control__indicator"></div>
-
-                                        <span>Согласен с <a href="#!">условиями пользования торговой площадки</a> и <a href="#!">правилами возврата</a>.</span>
-                                    </label>
-                                </div>
-                            </div>
-                            
-                            <div class="order-fixed-block border-style mt-2">
-                                <a href="#!" class="close-icon"><img src="images/menu-close-icon.svg" alt=""></a>
-                                <p>Войдите или зарегистрируйтесь, чтобы оплачивать до 30% <a href="#!">бонусными баллами</a></p>
-                                <form action="#!">
-                                    <input type="email" name="email" id="email" placeholder="Email">
-                                    <button type="submit" id="order-fixed-btn">далее</button>
-                                </form>
-                            </div>
+									<div class="email-reg order-fixed-block border-style mt-2">
+										<a href="#!" class="close-icon"><img src="images/menu-close-icon.svg" alt=""></a>
+										<p>Почти готово! До регистрации в бонусной системе остался один шаг</p>
+										<form action="#!">
+											<input type="email" name="email-reg" id="email-reg" value="real@client.com">
+											<div class="order-fixed-pass">
+												<input type="password" id="password" name="password" placeholder="Пароль">
+											</div>
+											<div class="order-fixed-login">
+												<button type="submit" id="login-account" class="blue-btn">Войти</button>
+												<a href="#!">Восстановить пароль</a>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
                         </div>
                     </div>
                 </div>
@@ -258,17 +309,32 @@
                 <div class="row">
                     <div class="col-lg-12 basket-menu">
                         <div class="back">
-                            <a href="#!">ВЕРНУТЬСЯ К ПОКУПКАМ</a>
+                            <a href="#!" class="pc">ВЕРНУТЬСЯ К ПОКУПКАМ</a>
+							<a href="#!" class="mob back-btn">назад</a>
                         </div>
                         <div class="basket-logo">
                             <a href="#!"><img src="images/head-logo.png" alt=""></a>
                         </div>
                         <div class="need-help">
-                            <p>НУЖНА ПОМОЩЬ? <a href="tel:+44 (0)115 973 7860">+44 (0)115 973 7860</a></p>
+                            <p class="pc">НУЖНА ПОМОЩЬ? <a href="tel:+44 (0)115 973 7860">+44 (0)115 973 7860</a></p>
+							<a href="#!" class="mob support">поддержка</a>
                         </div>
                     </div>
                 </div>
             </div>
+			<div class="container-fluid ftr-end-con">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 ftr-end">
+							<p>2019. COMAZO</p>
+							<div class="ftr-end-link">
+								<a href="#!">ПОЛИТИКА БЕЗОПАСНОСТИ И ПЕРОНАЛЬНЫХ ДАННЫХ</a>
+								<a href="#!">ЗАЩИТА  ИНФОРМАЦИИ</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</footer>
 
 	</div>
