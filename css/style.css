@@ -134,6 +134,10 @@ img {
 .header-top.second .close-top {
   margin-left: auto;
 }
+.header-top .header-top-slide {
+  display: flex;
+  align-items: center;
+}
 
 .header-top.first {
   padding: 0;
