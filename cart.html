@@ -123,7 +123,7 @@
                             <div class="basket-delivery-method border-style mt-2">
                                 <div class="title">
                                     <h2>Способ доставки</h2>
-                                    <a href="#!">Изменить</a>
+                                    <a href="#!" class="method-top-change">Изменить</a>
                                 </div>
                                 <select name="city" id="city">
                                     <option>Выберите город</option>
@@ -132,6 +132,144 @@
                                     <option value="">Boxberry</option>
                                     <option value="">Пункт выдачи, Boxberry, Тихвин, Коломенская улица, д. 5А</option>
                                 </select>
+
+								<div class="row methods methods-choose">
+									<div class="col-lg-6 col-6 issuance-col pr-5">
+										<a href="#!" class="issuance-point border-style-15 basket-method">
+											<div class="issuance-name method-name">
+												<h2>ПУНКТ ВЫДАЧИ</h2>
+												<span>СДЭК, Boxberry, Почта России</span>
+											</div>
+											<div class="issuance-info method-text">
+												<p class="issuance-date">5-14 дней</p>
+												<span>|</span>
+												<p class="issuance-price">от 256 ₽</p>
+											</div>
+										</a>
+									</div>
+
+									<div class="col-lg-6 col-6 courier-col pl-5">
+										<a href="#!" class="courier-door border-style-15 basket-method">
+											<div class="courier-name method-name">
+												<h2>КУРЬЕРОМ ДО ДВЕРИ</h2>
+												<span>СДЭК, Boxberry, Почта России</span>
+											</div>
+											<div class="courier-info method-text">
+												<p class="courier-date">2-4 дней</p>
+												<span>|</span>
+												<p class="courier-price">от 340 ₽</p>
+											</div>
+										</a>
+									</div>
+								</div>
+
+								<div class="row methods method-point">
+									<div class="col-lg-4 col-sm-4 col-12 sdek-col pr-5">
+										<div class="basket-sdek border-style-15 basket-method">
+											<div class="sdek-block method-name">
+												<h2>СДЭК</h2>
+												<span>Выберите ПВЗ</span>
+											</div>
+											<div class="sdek-info method-text">
+												<p class="sdek-date">4-7 дней</p>
+												<span>|</span>
+												<p class="sdek-price">295 ₽</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-sm-4 col-12 boxberry-col pr-5 pl-5">
+										<div class="basket-boxberry border-style-15 basket-method">
+											<div class="boxberry-block method-name">
+												<h2>Boxberry</h2>
+												<span>г. Тихвин, Коломенская улица, д. 5А, Ежедневно 10:00-21:00</span>
+												<a href="#!" class="change-method-address">Изменить адрес</a>
+											</div>
+											<div class="boxberry-info method-text">
+												<p class="boxberry-date">3-5 дней</p>
+												<span>|</span>
+												<p class="boxberry-price">416 ₽</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-sm-4 col-12 russia-col pl-5">
+										<div class="basket-russia border-style-15 basket-method">
+											<div class="russia-block method-name">
+												<h2>Почта России</h2>
+												<span>Выберите ПВЗ</span>
+											</div>
+											<div class="russia-info method-text">
+												<p class="russia-date">5-14 дней</p>
+												<span>|</span>
+												<p class="russia-price">256 ₽</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="row methods method-courier">
+									<div class="col-lg-6 col-6 sdek-col pr-5">
+										<div class="basket-sdek border-style-15 basket-method">
+											<div class="sdek-block method-name">
+												<h2>СДЭК</h2>
+												<span>Укажите адрес</span>
+											</div>
+											<div class="sdek-info method-text">
+												<p class="sdek-date">4-7 дней</p>
+												<span>|</span>
+												<p class="sdek-price">295 ₽</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-6 col-6 boxberry-col pl-5">
+										<div class="basket-boxberry border-style-15 basket-method">
+											<div class="boxberry-block method-name">
+												<h2>Boxberry</h2>
+												<span>Укажите адрес</span>
+											</div>
+											<div class="boxberry-info method-text">
+												<p class="boxberry-date">3-5 дней</p>
+												<span>|</span>
+												<p class="boxberry-price">416 ₽</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-lg-6 col-sm-6 col-12">
+										<div class="title mt-2">
+											<h2>Адрес доставки</h2>
+										</div>
+									</div>
+									<div class="col-lg-6 col-sm-6 col-12 enter-address-block">
+										<form action="#!" id="enter-address-form">
+											<div class="row">
+												<div class="col-12">
+													<div class="form-group">
+														<input type="text" name="street" id="street" placeholder="Улица">
+													</div>
+												</div>
+												<div class="col-3 pr-5">
+													<div class="form-group">
+														<input type="text" name="home" id="home" placeholder="Дом">
+													</div>
+												</div>
+												<div class="col-3 pr-5 pl-5">
+													<div class="form-group">
+														<input type="number" name="flat" id="flat" placeholder="Кв.">
+													</div>
+												</div>
+												<div class="col-6 pl-5">
+													<div class="form-group">
+														<input type="number" name="post-index" id="post-index" placeholder="Индекс">
+													</div>
+												</div>
+											</div>
+
+											<div class="select-on-map">
+												<a href="#!">Выбрать на карте</a>
+											</div>
+										</form>
+									</div>
+								</div>
                             </div>
 
                            <div class="basket-personal-payment">
@@ -242,8 +380,25 @@
 											</div>
 										</div>
 		
-										<div class="basket-side-selivery">
+										<div class="basket-side-delivery">
 											<p>Доставка: <a href="#!">Выберите адрес</a></p>
+
+											<div class="side-delivery-in">
+												<div class="side-delivery-info">
+													<p>Доставка:  <span>Пункт выдачи, Boxberry</span></p>
+													<span>Тихвин, Коломенская улица, д. 5А,</span>
+													<span>Ежедневно 10:00-21:00</span>
+												</div>
+												
+												<div class="side-received-info">
+													<p>Получатель:  <span>Евгений Никитин</span></p>
+													<span>+7 (999) 123-45-67</span>
+												</div>
+
+												<div class="side-pay-btn">
+													<p>Оплата:  <a href="#!">Выбрать способ оплаты</a></p>
+												</div>
+											</div>
 		
 											<button type="submit" id="basket-order" class="blue-btn">Оформить заказ</button>
 		

@@ -95,6 +95,38 @@ $(function (){
         $(this).siblings().removeClass('active');
         $(this).addClass('active');
     });
+
+    $('.issuance-point').on('click',function(e){
+        e.preventDefault();
+        $(this).addClass('active');
+        $('.method-point').addClass('active');
+    });
+    $(document).mouseup(function (e){
+        var div = $(".method-point, .issuance-point");
+        if (!div.is(e.target) 
+            && div.has(e.target).length === 0) {
+            div.removeClass('active');
+        }
+    });
+
+    $('.courier-door').on('click',function(e){
+        e.preventDefault();
+        $(this).addClass('active');
+        $('.method-courier').addClass('active');
+    });
+    $(document).mouseup(function (e){
+        var div = $(".method-courier, .courier-door");
+        if (!div.is(e.target) 
+            && div.has(e.target).length === 0) {
+            div.removeClass('active');
+        }
+    });
+
+    $('.method-top-change').on('click',function(e){
+        e.preventDefault();
+        $(this).parent().parent().addClass('active');
+        $('.methods-choose').addClass('show');
+    });
     
 
 

@@ -1999,6 +1999,14 @@ header .navbar .navbar-nav .dropdown-item {
   border-radius: 10px;
   padding: 30px;
 }
+.border-style-15 {
+  border: 1px solid #D7D7D7;
+  border-radius: 10px;
+  padding: 15px;
+}
+.border-link {
+  border-color: #1B3B58;
+}
 .account-sec .account-menu-col {
   padding-top: 30px;
 }
@@ -3078,18 +3086,18 @@ header .navbar .navbar-nav .dropdown-item {
   color: #fff;
 }
 
-.basket-side-selivery {
+.basket-side-delivery {
   border-top: 1px solid #f0f0f0;
   padding-top: 15px;
 }
-.basket-side-selivery > p {
+.basket-side-delivery > p {
   display: flex;
   align-items: center;
   font-size: 16px;
   line-height: 18px;
   color: #696969;
 }
-.basket-side-selivery > p a {
+.basket-side-delivery > p a {
   display: inline-block;
   font-size: 16px;
   line-height: 18px;
@@ -3097,23 +3105,23 @@ header .navbar .navbar-nav .dropdown-item {
   margin-left: 10px;
   text-decoration: underline;
 }
-.basket-side-selivery button {
+.basket-side-delivery button {
   margin: 30px 0 10px;
 }
-.basket-side-selivery label {
+.basket-side-delivery label {
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
   color: #696969;
   padding-left: 30px;
 }
-.basket-side-selivery .control__indicator {
+.basket-side-delivery .control__indicator {
   width: 20px;
   height: 20px;
   border-radius: 50%;
   border-color: #696969;
 }
-.basket-side-selivery .control--checkbox .control__indicator:after {
+.basket-side-delivery .control--checkbox .control__indicator:after {
   border-color: #696969;
   left: 6px;
   top: 3px;
@@ -3121,23 +3129,196 @@ header .navbar .navbar-nav .dropdown-item {
   height: 9px;
   border-width: 0 1px 1px 0;
 }
-.basket-side-selivery .control:hover input:not([disabled]):checked ~ .control__indicator,
-.basket-side-selivery .control input:checked:focus ~ .control__indicator,
-.basket-side-selivery .control input:checked ~ .control__indicator {
+.basket-side-delivery .control:hover input:not([disabled]):checked ~ .control__indicator,
+.basket-side-delivery .control input:checked:focus ~ .control__indicator,
+.basket-side-delivery .control input:checked ~ .control__indicator {
   background: #fff;
 }
-.basket-side-selivery label span {
+.basket-side-delivery label span {
   display: block;
   font-size: 12px;
   line-height: 14px;
   color: #696969;
 
 }
-.basket-side-selivery label span a {
+.basket-side-delivery label span a {
   color: #696969;
   display: unset;
   text-decoration: underline;
 }
+.side-delivery-in .side-pay-btn p,
+.side-delivery-in .side-received-info p,
+.side-delivery-in .side-delivery-info p {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 18px;
+  color: #696969;
+  margin-top: 15px;
+}
+
+.side-delivery-in .side-received-info > span,
+.side-delivery-in .side-delivery-info > span {
+  margin-top: 5px;
+}
+.side-delivery-in .side-pay-btn p a,
+.side-delivery-in .side-received-info p span,
+.side-delivery-in .side-delivery-info p span {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 18px;
+  color: #1C3C57;
+  margin-left: 10px;
+}
+.side-delivery-in .side-received-info > span,
+.side-delivery-in .side-delivery-info > span {
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+  color: #696969;
+}
+/* // */
+.basket-sec .methods {
+  margin-top: 10px;
+}
+.basket-sec .methods-choose {
+  display: none;
+}
+.basket-sec .methods-choose.show {
+  display: flex;
+}
+/* /// */
+.method-courier,
+.method-point {
+  display: none;
+}
+.method-courier.active,
+.method-point.active {
+  display: flex
+}
+.courier-door.active,
+.issuance-point.active {
+  height: 53px;
+  overflow: hidden;
+}
+
+/* // */
+.basket-sec .methods .border-style-15:hover {
+  border-color: #1B3B58;
+}
+.basket-sec .basket-method,
+.basket-sec .issuance-point,
+.basket-sec .courier-door {
+  width: 100%;
+}
+.basket-method {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
+  cursor: pointer;
+}
+.basket-sec .issuance-point h2,
+.basket-sec .courier-door h2,
+.basket-sec .basket-method .method-name h2 {
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #696969;
+}
+.basket-sec .basket-method .method-name > span {
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+  color: #696969;
+}
+.basket-method .method-name h2 {
+  margin-bottom: 10px;
+}
+.basket-sec .basket-method .courier-info,
+.basket-sec .basket-method .issuance-info,
+.basket-sec .basket-method .russia-info,
+.basket-sec .basket-method .boxberry-info,
+.basket-sec .basket-method .sdek-info {
+  display: flex;
+  align-items: center;
+}
+
+.basket-sec .basket-method .method-text span, 
+.basket-sec .basket-method .method-text p {
+  font-size: 12px;
+  line-height: 14px;
+  color: #696969;
+}
+.basket-sec .basket-method .method-text span {
+  display: inline-block;
+  margin: 0 10px;
+}
+.basket-sec .basket-method .change-method-address {
+  font-size: 12px;
+  line-height: 14px;
+  text-decoration-line: underline;
+  color: #696969;
+}
+.basket-sec .basket-method .change-method-address:hover {
+  text-decoration: none;
+}
+/* ..... */
+.basket-sec .enter-address-block .form-group input {
+  width: 100%;
+  padding: 0 15px;
+  height: 38px;
+  background: #FFFFFF;
+  border: 1px solid #D7D7D7;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 0px;
+  color: #696969;
+}
+.basket-sec .enter-address-block .form-group input:focus,
+.basket-sec .enter-address-block .form-group input:hover {
+  border-color: #1B3B58;
+}
+.basket-sec .enter-address-block .select-on-map {
+  text-align: right;
+  margin-top: 15px;
+}
+.basket-sec .enter-address-block .select-on-map a {
+  font-size: 12px;
+  line-height: 14px;
+  text-decoration-line: underline;
+  color: #696969;
+}
+
+.basket-sec .basket-delivery-method .select {
+  transition: .4s all ease;
+}
+.basket-sec .basket-delivery-method.active .select {
+  width: 49%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .order-fixed-block {
   position: relative;
@@ -4724,7 +4905,7 @@ svg path {
     padding-top: 30px;
     border-top: 1px solid #f0f0f0;
   }
-  .basket-side-selivery label span {
+  .basket-side-delivery label span {
     width: 65%;
   }
   .order-fixed-block {
