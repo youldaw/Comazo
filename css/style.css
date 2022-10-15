@@ -258,6 +258,104 @@ header .navbar .navbar-nav .dropdown-item {
 }
 .dropdown-toggle::after {content: none;}
 /* ============== End Header ============= */
+/* ========================= HOME PAGE ===================================== */
+.index-sec {
+  padding-top: 40px;
+}
+.pr-0 {padding-right: 0;}
+.pl-0 {padding-left: 0;}
+
+.index-sec .index-main-banner {
+  height: 100%;
+}
+.index-sec .index-main-left {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 60px;
+  text-align: center;
+  background-color: #C3CBCB;
+  position: relative;
+}
+.index-sec .index-main-left .index-left-info span {
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.index-tag {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+}
+.index-sec .index-main-left h1 {
+  font-size: 48px;
+  line-height: 55px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.index-sec .index-main-left .view-btn {
+  font-size: 16px;
+  line-height: 0px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 20px 54px;
+  margin-top: 40px;
+  border: 1px solid #F0F0F0;
+  border-radius: 25px;
+}
+.index-sec .index-main-left .view-btn:hover {
+  background: #fff;
+  color: #1B3B58;
+}
+.index-sec .index-main-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* // */
+.index-sec .index-collection {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.index-sec .index-col-item {
+  display: block;
+  margin-right: 10px;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+.index-sec .index-col-item:last-child {
+  margin-right: 0;
+}
+.index-sec .index-col-item img {
+  width: 100%;
+}
+.index-sec .index-col-item .index-col-item-img {
+  overflow: hidden;
+}
+.index-sec .index-col-item:hover .index-col-item-img img {
+  transform: scale(1.05);
+}
+.index-sec .index-col-item:hover span {
+  opacity: 1;
+}
+.index-sec .index-col-item span {
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #696969;
+}
+/* ================== end HOME PAGE ====================== */
+
 .product-sec .product-col:nth-child(odd){
   padding-right: 10px;
 }
