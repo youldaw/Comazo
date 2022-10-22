@@ -435,6 +435,70 @@ $(function (){
         }
     });
 
+    $('.week-slide').slick({
+        infinite: false,
+        slidesToShow: 4, // Shows a three slides at a time
+        slidesToScroll: 1, // When you click an arrow, it scrolls 1 slide at a time
+        arrows: true, // Adds arrows to sides of slider
+        dots: false, // Adds the dots on the bottom
+        prevArrow: '<button class="slide-arrow prev-arrow"></button>',
+        nextArrow: '<button class="slide-arrow next-arrow"></button>',
+        responsive: [{
+            breakpoint: 1000,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2.1,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 0,
+            settings: {
+            slidesToShow: 2.1,
+            slidesToScroll: 1
+            },
+            
+        }]
+    });
+
+    $('.index-slide').slick({
+        infinite: true,
+        slidesToShow: 1, // Shows a three slides at a time
+        slidesToScroll: 1, // When you click an arrow, it scrolls 1 slide at a time
+        arrows: true, // Adds arrows to sides of slider
+        dots: false, // Adds the dots on the bottom
+        prevArrow: '<button class="slide-arrow prev-arrow"></button>',
+        nextArrow: '<button class="slide-arrow next-arrow"></button>',
+        responsive: [{
+            breakpoint: 1000,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 0,
+            settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+            },
+            
+        }]
+    });
+
 
 
     $('.minus').click(function () {
