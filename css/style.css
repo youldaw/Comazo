@@ -273,6 +273,7 @@ header .navbar-nav .dropdown .dropdown-menu {
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
   border: none;
   border-radius: 0;
+  left: 0;
 }
 header .navbar .dropdown .drop-link {
   display: flex;
@@ -4802,6 +4803,208 @@ svg path {
   padding-right: 5px;
 }
 
+
+/* termo page */
+.termo-sec {
+  padding: 60px 0 90px;
+}
+.termo-sec .termo-top {
+  height: 600px;
+  background: #F0F0F0;
+}
+.termo-sec .termo-top-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  padding: 50px 120px;
+}
+.termo-sec .termo-top-text h1 {
+  font-size: 48px;
+  line-height: 55px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  color: #696969;
+}
+.termo-sec .termo-top-text p {
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #696969;
+  margin-bottom: 60px;
+}
+.termo-sec .termo-top-text a {
+  width: auto;
+  height: auto;
+  padding: 20px 60px;
+  line-height: 0;
+}
+.termo-sec .termo-img img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+}
+.termo-sec .termo-top-rov {
+  justify-content: center;
+  margin-top: -40px;
+}
+.termo-sec .termo-top-block {
+  padding: 20px;
+  background: #1B3B58;
+}
+.termo-sec .termo-top-block h3 {
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+.termo-sec .termo-top-info p {
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+}
+/* ///// */
+.termo-properties {
+  padding-top: 100px;
+}
+.termo-properties .title h2 {
+  margin-bottom: 60px;
+  font-size: 28px;
+  line-height: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #696969;
+}
+.termo-properties-img {
+  text-align: center;
+}
+/* /// */
+.termo-secret {
+  padding-top: 100px;
+}
+.termo-secret .title h2 {
+  font-size: 28px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #696969;
+  margin-bottom: 30px;
+}
+.termo-secret .termo-secret-block {
+  padding: 20px;
+  background: #F0F0F0;
+  height: 100%;
+}
+.termo-secret .termo-secret-icon {
+  margin-bottom: 50px;
+}
+.termo-secret .termo-secret-title h4 {
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #696969;
+  margin-bottom: 10px;
+}
+.termo-secret .termo-secret-title p {
+  font-size: 12px;
+  line-height: 14px;
+  color: #696969;
+}
+/* /// */
+.termo-function {
+  padding-top: 100px;
+}
+.termo-function .termo-function-block {
+  padding: 30px 100px;
+  background: #1B3B58;
+  text-align: center;
+}
+.termo-function .termo-function-block .subtitle p {
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 100px;
+}
+.termo-function .termo-function-block .title h2 {
+  font-size: 40px;
+  line-height: 46px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+.termo-function .termo-function-block .title p {
+  font-size: 16px;
+  line-height: 18px;
+  color: #FFFFFF;
+  margin: 0 auto 80px auto;
+  max-width: 720px;
+}
+.termo-function .termo-function-block .title a {
+  padding: 15px 30px;
+  font-size: 12px;
+  line-height: 0px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: 1px solid #F0F0F0;
+  border-radius: 25px;
+  text-align: center;
+}
+.termo-function .termo-function-block .title a:hover {
+  background-color: #fff;
+  color: #696969;
+}
+/* // */
+.termo-tab {
+  padding-top: 100px;
+}
+.termo-tab .termo-tab-nav ul {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.termo-tab .termo-tab-nav ul li {
+  width: 100%;
+}
+.termo-tab .termo-tab-nav ul li .nav-link {
+  width: 100%;
+  text-align: center;
+  padding: 0 0 18px;
+  border-bottom: 2px solid #F2F2F2;
+  border-radius: 0;
+}
+.termo-tab .termo-tab-nav ul li .nav-link h2 {
+  font-size: 28px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #D7D7D7;
+  margin-bottom: 5px;
+}
+.termo-tab .termo-tab-nav ul li .nav-link span {
+  display: block;
+  font-size: 16px;
+  line-height: 18px;
+  color: #D7D7D7;
+}
+.termo-tab .termo-tab-content {
+  margin-top: 60px;
+}
+.termo-tab .termo-tab-nav .nav-pills .nav-link.active,
+.termo-tab .termo-tab-nav .nav-pills .show>.nav-link {
+  background: transparent;
+  border-color: #1B3B58;
+}
+.termo-tab .termo-tab-nav .nav-pills .nav-link.active h2,
+.termo-tab .termo-tab-nav .nav-pills .show>.nav-link h2 {
+  color: #1B3B58;
+}
+.termo-tab .termo-tab-nav .nav-pills .nav-link.active span,
+.termo-tab .termo-tab-nav .nav-pills .show>.nav-link span {
+  color: #1B3B58;
+}
 
 
 
