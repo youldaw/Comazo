@@ -517,9 +517,11 @@ $(function (){
     });
 
     $('.navbar-nav .dropdown').hover(function() {
+        $(this).addClass('active');
         $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
     }, function() {
         $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+        $(this).removeClass('active');
     });
 
 

@@ -230,6 +230,9 @@ header .navbar .navbar-nav .nav-link {
   position: relative;
   transition: .4s all ease;
 }
+header .navbar .navbar-nav .nav-item.active .nav-link::after {
+  opacity: 1;
+}
 header .navbar .navbar-nav .nav-link::after {
   content: "";
   display: block;
@@ -274,6 +277,7 @@ header .navbar-nav .dropdown .dropdown-menu {
   border: none;
   border-radius: 0;
   left: 0;
+  top: 100%;
 }
 header .navbar .dropdown .drop-link {
   display: flex;
@@ -5005,6 +5009,322 @@ svg path {
 .termo-tab .termo-tab-nav .nav-pills .show>.nav-link span {
   color: #1B3B58;
 }
+.termo-tab .termo-tab-block {
+  height: 100%;
+  height: 445px;
+}
+.termo-tab .termo-tab-col {
+  margin-bottom: 90px;
+}
+.termo-tab .termo-tab-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background: #2B581B;
+  height: 100%;
+  padding: 10px;
+}
+.termo-tab .termo-tab-text h2 {
+  font-size: 28px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+.termo-tab .termo-tab-text span {
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+  color: #F0F0F0;
+}
+.termo-tab .termo-tab-img {
+  display: block;
+  text-align: center;
+}
+.termo-tab .termo-tab-img,
+.termo-tab .termo-tab-img img {
+  width: 100%;
+  height: 100%;
+}
+.termo-tab .termo-tab-img span {
+  text-align: center;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  margin-top: 15px;
+  color: #696969;
+}
+
+.termo-tab .temprature-gradus .gradus-line {
+  display: block;
+  height: 12px;
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0) 19.02%, #FFFFFF 47.92%, rgba(255, 255, 255, 0) 76.81%);
+  margin-bottom: 5px;
+}
+.termo-tab .temprature-gradus .gradus-num {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.termo-tab .temprature-gradus .gradus-num span {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 14px;
+  color: #fff;
+}
+.termo-tab .temprature-items p {
+  text-transform: uppercase;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.termo-tab .temprature-items .items-line span {
+  width: 100%;
+}
+.termo-tab .temprature-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.termo-tab .temprature-items:last-child {
+  margin-bottom: 0;
+}
+.termo-tab .temprature-items .items-line {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.termo-tab .temprature-items .items-line span {
+  display: inline-block;
+  width: 100%;
+  height: 10px;
+  margin-right: 2px;
+  background: rgba(255, 255, 255, 0.2);
+}
+.termo-tab .temprature-items .items-line span.active {
+  background: #fff;
+}
+.termo-tab .temprature-items p {
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  line-height: 1;
+  width: 40%;
+}
+.termo-tab-info-top h3 {
+  text-align: left;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+.termo-tab-info-top .termo-tab-info {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+.termo-tab-info-top .termo-tab-info img {
+  margin-right: 10px;
+}
+.termo-tab-info-top .termo-tab-info p {
+  margin-bottom: 2px;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.termo-tab-info-top .termo-tab-info span {
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+}
+.termo-tab-info-top > p {
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+}
+.termo-tab .tab-yellow .termo-tab-text {
+  background: #E28903;
+  padding: 20px 10px;
+  justify-content: space-between;
+  text-align: left;
+}
+.termo-tab .tab-red .termo-tab-text {
+  padding: 20px 10px;
+  justify-content: space-between;
+  text-align: left;
+  background: #A00004;
+}
+.termo-tab .tab-red .temprature-gradus .gradus-line {
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0) 36.23%, #FFFFFF 64.04%, rgba(255, 255, 255, 0) 91.85%);
+}
+/* //////// */
+.on-select {
+  padding-top: 10px;
+}
+.on-select .title h2 {
+  font-size: 28px;
+  line-height: 32px;
+}
+.on-select .on-select-block {
+  padding: 20px;
+  background: #F0F0F0;
+}
+.on-select .on-select-block span {
+  display: block;
+  font-size: 52px;
+  line-height: 60px;
+  text-transform: uppercase;
+  color: #D7D7D7;
+  margin-bottom: 10px;
+}
+.on-select .on-select-block h4 {
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #696969;
+  margin-bottom: 10px;
+}
+.on-select .on-select-block p {
+  font-size: 12px;
+  line-height: 14px;
+  color: #696969;
+}
+/* ///// */
+.termo-test {
+  padding-top: 100px;
+}
+.termo-test .termo-test-block {
+  height: 520px;
+  overflow: hidden;
+}
+.termo-test .termo-test-img img {
+  width: 100%;
+}
+.termo-test .termo-test-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  background: #1B3B58;
+  padding: 30px 60px;
+  color: #fff;
+  height: 100%;
+}
+.termo-test .termo-test-text .test-top {
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+.termo-test .termo-test-text .test-center h2 {
+  font-size: 40px;
+  line-height: 46px;
+  text-transform: uppercase;
+}
+.termo-test .termo-test-text .test-center p {
+  font-size: 16px;
+  line-height: 18px;
+}
+.termo-test .termo-test-text .test-sub a {
+  font-size: 16px;
+  line-height: 0px;  
+  text-transform: uppercase;
+  padding: 20px 43px;
+  border: 1px solid #F0F0F0;
+  border-radius: 25px;
+  color: #fff;
+}
+.termo-test .termo-test-text .test-sub a:hover {
+  background: #fff;
+  color: #696969;
+}
+.termo-questions {
+  padding: 130px 0 90px;
+}
+.termo-questions .title h2 {
+  font-size: 28px;
+  line-height: 32px;
+}
+.termo-questions .accordion-item {
+  border: none;
+  border-bottom: 1px solid #F0F0F0;
+}
+.termo-questions .accordion-item:first-child {
+  border-top: 1px solid #F0F0F0;
+}
+
+.termo-questions .accordion-button {
+  padding: 15px 0;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #696969;
+}
+.termo-questions .accordion-button img {
+  margin-left: auto;
+}
+.termo-questions .accordion-button[aria-expanded="true"] img {
+  transform: rotate(180deg);
+}
+.termo-questions .accordion-button:not(.collapsed) {
+  color: #696969;
+  box-shadow: none;
+  background: transparent;
+}
+.termo-questions .accordion-body {
+  padding: 0 0 10px;
+  font-size: 14px;
+}
+.termo-questions .accordion-button::after {
+  content: none;
+}
+/* /// */
+.termo-ftr {
+  background: #1B3B58;
+}
+.termo-ftr .termo-ftr-block {
+  border-bottom: 1px solid #F0F0F0;
+  padding: 60px 0;
+}
+.termo-ftr .title h3 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.termo-ftr .termo-ftr-text p {
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+  padding-right: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -5067,6 +5387,9 @@ svg path {
 
 
 @media only screen and (max-width: 1200px) {
+  .termo-properties-img img {
+    width: 100%;
+  }
   header .navbar .dropdown .drop-img img {
     width: 100%;
     height: 167px;
@@ -5480,6 +5803,15 @@ svg path {
   }
   .help-sec .help-block {
     height: 100%;
+  }
+  /* termo page */
+  .termo-secret .termo-secret-title h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .termo-secret .termo-secret-block {
+    padding: 10px 7px;
   }
 }
 
