@@ -4873,7 +4873,7 @@ svg path {
 }
 /* ///// */
 .termo-properties {
-  padding-top: 100px;
+  padding-top: 60px;
 }
 .termo-properties .title h2 {
   margin-bottom: 60px;
@@ -4981,6 +4981,10 @@ svg path {
   border-bottom: 2px solid #F2F2F2;
   border-radius: 0;
 }
+.termo-tab .termo-tab-nav ul li .nav-link h2 span {
+  display: inline-block;
+}
+.termo-tab .termo-tab-nav ul li .nav-link h2 span,
 .termo-tab .termo-tab-nav ul li .nav-link h2 {
   font-size: 28px;
   line-height: 32px;
@@ -5053,9 +5057,11 @@ svg path {
   font-size: 12px;
   line-height: 14px;
   text-transform: uppercase;
+  display: block;
   margin-top: 15px;
   color: #696969;
 }
+.termo-tab .termo-tab-img span br {display: none;}
 
 .termo-tab .temprature-gradus .gradus-line {
   display: block;
@@ -5116,6 +5122,7 @@ svg path {
   line-height: 1;
   width: 40%;
 }
+.termo-tab-block .termo-info-tab h3,
 .termo-tab-info-top h3 {
   text-align: left;
   font-size: 20px;
@@ -5123,6 +5130,15 @@ svg path {
   text-transform: uppercase;
   color: #FFFFFF;
   margin-bottom: 20px;
+}
+.termo-tab-block .termo-info-tab {
+  text-align: center;
+}
+.termo-tab-block .termo-info-tab span {
+  font-size: 12px;
+  line-height: 14px;
+  color: #F0F0F0;
+  margin-top: 10px;
 }
 .termo-tab-info-top .termo-tab-info {
   display: flex;
@@ -5205,8 +5221,13 @@ svg path {
   height: 520px;
   overflow: hidden;
 }
+.termo-test .termo-test-img {
+  height: 100%;
+}
 .termo-test .termo-test-img img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .termo-test .termo-test-text {
   display: flex;
@@ -5219,10 +5240,12 @@ svg path {
   color: #fff;
   height: 100%;
 }
-.termo-test .termo-test-text .test-top {
+.termo-test .termo-test-text .test-top span {
+  display: block;
   font-size: 12px;
   line-height: 14px;
   text-transform: uppercase;
+  margin-bottom: 40px;
 }
 .termo-test .termo-test-text .test-center h2 {
   font-size: 40px;
@@ -5232,6 +5255,7 @@ svg path {
 .termo-test .termo-test-text .test-center p {
   font-size: 16px;
   line-height: 18px;
+  margin-bottom: 30px;
 }
 .termo-test .termo-test-text .test-sub a {
   font-size: 16px;
@@ -5307,6 +5331,9 @@ svg path {
   color: #FFFFFF;
   padding-right: 50px;
 }
+/* end termo page */
+
+/* wholesale page */
 
 
 
@@ -5341,9 +5368,7 @@ svg path {
 
 
 
-
-
-
+.termo-tab .tab-mob-btn,
 .for-mob2 {display: none;}
 
 @media only screen and (max-width: 1400px) {
@@ -5389,7 +5414,21 @@ svg path {
 
 @media only screen and (max-width: 1200px) {
   .for-tab-img {display: block;}
-  
+  .termo-tab-block .termo-info-tab h3 {
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .termo-tab .tab-red .termo-tab-text,
+  .termo-tab .tab-yellow .termo-tab-text {
+    justify-content: center;
+  }
+  .termo-tab-info-sub,
+  .termo-tab-info-top {
+    display: none;
+  }
+  .termo-tab .termo-tab-block {
+    height: 100%;
+  }
   .termo-sec .termo-top {
     height: 100%;
   }
@@ -5620,6 +5659,36 @@ svg path {
 
 
 @media only screen and (max-width: 992px) {
+  .termo-ftr {display: none;}
+  .termo-questions .qustions-right-col .accordion-item {
+    width: 100%;
+  }
+  .termo-questions .qustions-right-col .accordion-item:first-child {
+    border-top: none;
+  }
+  .termo-tab .termo-tab-nav ul li .nav-link h2 span,
+  .termo-tab .termo-tab-nav ul li .nav-link h2 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .termo-test .termo-test-block {
+    height: 100%;
+  }
+  .termo-test .termo-test-text {
+    padding: 20px;
+  }
+  .termo-test .termo-test-text .test-center h2 {
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 20px;
+  }
+  .termo-test .termo-test-text .test-sub a {
+    font-size: 12px;
+    padding: 15px 30px;
+  }
+  .on-select .on-select-block {
+    height: 100%;
+  }
   .termo-sec .termo-top-text {
     padding: 50px;
   }
@@ -5856,8 +5925,117 @@ svg path {
 
 
 @media only screen and (max-width: 767px) {
+  .termo-tab .termo-tab-nav .nav-pills .nav-link span {
+    display: block;
+    font-size: 12px;
+    line-height: 1.2;
+  }
+  .termo-tab .termo-tab-img span {
+    margin-top: 7px;
+  }
+  .termo-tab .tab-mob-btn {
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .termo-tab .tab-mob-btn a {
+    font-size: 12px;
+    line-height: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    border: 1px solid #E28903;
+    border-radius: 25px;
+  }
+  .termo-tab .tab-green .tab-mob-btn a {
+    color: #2B581B;
+    border-color: #2B581B;
+  }
+  .termo-tab .tab-yellow .tab-mob-btn a {
+    color: #E28903;
+    border-color: #E28903;
+  }
+  .termo-tab .tab-red .tab-mob-btn a {
+    color: #B72025;
+    border-color: #B72025;
+  }
+  .termo-function .termo-function-block .subtitle p {
+    margin-bottom: 60px;
+  }
+  .termo-function .termo-function-block .title p {
+    margin-bottom: 40px;
+  }
+  .termo-function .termo-function-block {
+    padding: 30px 20px;
+  }
+  .termo-test .termo-col-text {
+    padding-left: 15px;
+  }
+  .termo-test {
+    padding-top: 50px;
+  }
+  .termo-tab .termo-tab-content {
+    margin-top: 30px;
+  }
+  .termo-tab .termo-tab-col:last-child {
+    padding-right: 15px;
+  }
+  .termo-tab .tab-yellow .termo-tab-col:nth-child(3) {
+    padding-right: 15px;
+  }
+  .termo-properties-img .for-mob2:last-child {
+    margin-top: 60px;
+  }
+  .termo-tab .termo-tab-col {
+    margin-bottom: 50px;
+  }
+  .termo-properties .title h2 {
+    display: none;
+  }
+  .termo-questions,
+  .termo-tab,
+  .termo-function,
+  .termo-secret,
+  .termo-sec {
+    padding-top: 60px;
+  }
+  .termo-sec .termo-sec-text,
+  .termo-test .termo-col-text {
+    width: 100%;
+  }
+  .termo-sec .termo-sec-img,
+  .termo-test .termo-col-img {
+    display: none;
+  }
+  .termo-test .termo-test-block {
+    height: 400px;
+  }
+  .termo-function .termo-function-block .title h2,
+  .termo-test .termo-test-text .test-center h2 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .termo-secret .termo-secret-icon {
+    margin-bottom: 30px;
+  }
+  .termo-secret .termo-secret-block,
+  .on-select .on-select-block {
+    padding: 20px;
+    margin-bottom: 10px;
+    height: auto;
+  }
   .for-mob2 {display: block;}
   .for-tab-img {display: none;}
+  .d-sm {display: none;}
+
+  .termo-secret .pl-5,
+  .on-select .pl-5 {
+    padding-left: 15px;
+  }
+  .termo-secret .pr-5,
+  .on-select .pr-5 {
+    padding-right: 15px;
+  }
   header .navbar-nav .dropdown .dropdown-menu {
     position: static;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
@@ -6635,6 +6813,26 @@ svg path {
 
 
 @media only screen and (max-width: 480px) {
+  .termo-tab .termo-tab-img, .termo-tab .termo-tab-img img {
+    height: 186px;
+  }
+  .termo-function .termo-function-block .subtitle p {
+    margin-bottom: 80px;
+  }
+  .termo-function .termo-function-block .title p {
+    margin-bottom: 60px;
+  }
+  .termo-function .termo-function-block .title p {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .termo-function .termo-function-block .title h2,
+  .termo-secret .title h2,
+  .on-select .title h2,
+  .termo-questions .title h2 {
+    font-size: 24px;
+    line-height: 28px;
+  }
   .index-col-item .index-col-text, .index-col-item-img {
     height: 190px;
   }
@@ -6689,6 +6887,9 @@ svg path {
 
 
 @media only screen and (max-width: 375px) {
+  .termo-tab .termo-tab-img, .termo-tab .termo-tab-img img {
+    height: 150px;
+  }
   .index-col-item .index-col-text, .index-col-item-img {
     height: 140px;
   }
