@@ -7,19 +7,71 @@ $(function (){
         spaceBetween: 10,
         // Responsive breakpoints
         breakpoints: {
+            // when window width is >= 320px
+            320: {
+              slidesPerView: 2.1
+            },
+            480: {
+              slidesPerView: 2.1
+            },
+            768: {
+              slidesPerView: 3.1
+            },
+            // when window width is >= 640px
+            992: {
+              slidesPerView: 4
+            }
+          },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+        }
+    });
+
+    const swiper4 = new Swiper('.model-slide-men', {
+        // Default parameters
+        loop: false,
+        slidesPerView: 4,
+        spaceBetween: 10,
+        // Responsive breakpoints
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+              slidesPerView: 2.1
+            },
+            480: {
+              slidesPerView: 2.1
+            },
+            768: {
+              slidesPerView: 3.1
+            },
+            // when window width is >= 640px
+            992: {
+              slidesPerView: 4
+            }
+          },
+        navigation: {
+            nextEl: '.swiper-button-next2',
+            prevEl: '.swiper-button-prev2'
+        }
+    });
+
+    const swiper5 = new Swiper('.model-termo', {
+        // Default parameters
+        loop: false,
+        slidesPerView: 4,
+        spaceBetween: 10,
+        // Responsive breakpoints
+        breakpoints: {
           // when window width is >= 320px
           320: {
-            slidesPerView: 1
+            slidesPerView: 2.1
           },
-          375: {
-            slidesPerView: 1.2
-          },
-          // when window width is >= 480px
           480: {
-            slidesPerView: 1.4
+            slidesPerView: 2.1
           },
           768: {
-            slidesPerView: 2
+            slidesPerView: 3.1
           },
           // when window width is >= 640px
           992: {
@@ -27,8 +79,8 @@ $(function (){
           }
         },
         navigation: {
-            nextEl: '.swiper-button-next2',
-            prevEl: '.swiper-button-prev2'
+            nextEl: '.swiper-button-next3',
+            prevEl: '.swiper-button-prev3'
         }
     });
 
@@ -294,21 +346,21 @@ $(function (){
         responsive: [{
             breakpoint: 1000,
             settings: {
-              slidesToShow: 3,
+              slidesToShow: 3.02,
               slidesToScroll: 1
             }
           },
           {
             breakpoint: 768,
             settings: {
-              slidesToShow: 2,
+              slidesToShow: 2.04,
               slidesToScroll: 1
             }
           },
           {
             breakpoint: 0,
             settings: {
-            slidesToShow: 2,
+            slidesToShow: 2.04,
             slidesToScroll: 1
             },
             
@@ -368,7 +420,8 @@ $(function (){
                 navText: ['<img src="images/slide-left-arrow.svg">','<img src="images/slide-right-arrow.svg">'],
                 responsive:{
                     0:{
-                        items:1,
+                        items:1.1,
+                        margin:0,
                     },
                     768:{
                         items:2.1,
@@ -392,7 +445,7 @@ $(function (){
         navText: ['<img src="images/slide-left-arrow.svg">','<img src="images/slide-right-arrow.svg">'],
         responsive:{
             0:{
-                items:2,
+                items:1,
             },
             768:{
                 items:2,
