@@ -1,12 +1,44 @@
 $(function (){
 
+    const swiper3 = new Swiper('.model-slide', {
+        // Default parameters
+        loop: false,
+        slidesPerView: 4,
+        spaceBetween: 10,
+        // Responsive breakpoints
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 1
+          },
+          375: {
+            slidesPerView: 1.2
+          },
+          // when window width is >= 480px
+          480: {
+            slidesPerView: 1.4
+          },
+          768: {
+            slidesPerView: 2
+          },
+          // when window width is >= 640px
+          992: {
+            slidesPerView: 4
+          }
+        },
+        navigation: {
+            nextEl: '.swiper-button-next2',
+            prevEl: '.swiper-button-prev2'
+        }
+    });
+
     var owl = jQuery(".cd-hover-gal");
       owl.owlCarousel({
           items: 1,
           margin: 0,
           animateOut: 'fadeOut',
           animateIn:  'fadeIn',
-          smartSpeed: 250,
+          smartSpeed: 350,
       });
         jQuery(".cd-hover-gal .owl-dot").hover(function() {
             jQuery(this).trigger("click");
@@ -251,6 +283,43 @@ $(function (){
         }]
     });
 
+    $('.wholesale-slide').slick({
+        infinite: true,
+        slidesToShow: 4, // Shows a three slides at a time
+        slidesToScroll: 1, // When you click an arrow, it scrolls 1 slide at a time
+        arrows: true, // Adds arrows to sides of slider
+        dots: false, // Adds the dots on the bottom
+        prevArrow: '<button class="slide-arrow prev-arrow"></button>',
+        nextArrow: '<button class="slide-arrow next-arrow"></button>',
+        responsive: [{
+            breakpoint: 1000,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 0,
+            settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+            },
+            
+        }]
+    });
+
+
+    
+
+    
+
 
     $(window).on('load resize', function () {
         if ($(this).width() > 1025) {
@@ -280,6 +349,60 @@ $(function (){
                     }
                 }
             });
+        }
+    });
+
+    // new page wholesale
+    $(window).on('load resize', function () {
+        if ($(this).width() > 1030) {
+            $(".factory-slide").trigger('destroy.owl.carousel');
+        } else {
+            $('.factory-slide').owlCarousel({
+                loop:true,
+                margin:10,
+                nav:true,
+                dots:false,
+                center: false,
+                smartSpeed:900,
+                items:4,
+                navText: ['<img src="images/slide-left-arrow.svg">','<img src="images/slide-right-arrow.svg">'],
+                responsive:{
+                    0:{
+                        items:1,
+                    },
+                    768:{
+                        items:2.1,
+                    },
+                    992:{
+                        items:2.8,
+                    }
+                }
+            });
+        }
+    });
+
+    $('.wholesale-garant-slide').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        dots:false,
+        center: false,
+        smartSpeed:900,
+        items:4,
+        navText: ['<img src="images/slide-left-arrow.svg">','<img src="images/slide-right-arrow.svg">'],
+        responsive:{
+            0:{
+                items:2,
+            },
+            768:{
+                items:2,
+            },
+            1000:{
+                items:3,
+            },
+            1001:{
+                items:3,
+            }
         }
     });
 
@@ -407,6 +530,7 @@ $(function (){
             }
         }
     });
+    
 
 
 
@@ -523,9 +647,6 @@ $(function (){
         $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
         $(this).removeClass('active');
     });
-
-
-
 
 
 
