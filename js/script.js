@@ -1,89 +1,5 @@
 $(function (){
 
-    const swiper3 = new Swiper('.model-slide', {
-        // Default parameters
-        loop: false,
-        slidesPerView: 4,
-        spaceBetween: 10,
-        // Responsive breakpoints
-        breakpoints: {
-            // when window width is >= 320px
-            320: {
-              slidesPerView: 2.1
-            },
-            480: {
-              slidesPerView: 2.1
-            },
-            768: {
-              slidesPerView: 3.1
-            },
-            // when window width is >= 640px
-            992: {
-              slidesPerView: 4
-            }
-          },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev'
-        }
-    });
-
-    const swiper4 = new Swiper('.model-slide-men', {
-        // Default parameters
-        loop: false,
-        slidesPerView: 4,
-        spaceBetween: 10,
-        // Responsive breakpoints
-        breakpoints: {
-            // when window width is >= 320px
-            320: {
-              slidesPerView: 2.1
-            },
-            480: {
-              slidesPerView: 2.1
-            },
-            768: {
-              slidesPerView: 3.1
-            },
-            // when window width is >= 640px
-            992: {
-              slidesPerView: 4
-            }
-          },
-        navigation: {
-            nextEl: '.swiper-button-next2',
-            prevEl: '.swiper-button-prev2'
-        }
-    });
-
-    const swiper5 = new Swiper('.model-termo', {
-        // Default parameters
-        loop: false,
-        slidesPerView: 4,
-        spaceBetween: 10,
-        // Responsive breakpoints
-        breakpoints: {
-          // when window width is >= 320px
-          320: {
-            slidesPerView: 2.1
-          },
-          480: {
-            slidesPerView: 2.1
-          },
-          768: {
-            slidesPerView: 3.1
-          },
-          // when window width is >= 640px
-          992: {
-            slidesPerView: 4
-          }
-        },
-        navigation: {
-            nextEl: '.swiper-button-next3',
-            prevEl: '.swiper-button-prev3'
-        }
-    });
-
     var owl = jQuery(".cd-hover-gal");
       owl.owlCarousel({
           items: 1,
@@ -368,7 +284,89 @@ $(function (){
     });
 
 
-    
+    const swiper3 = new Swiper('.model-slide', {
+        // Default parameters
+        loop: false,
+        slidesPerView: 4,
+        spaceBetween: 10,
+        // Responsive breakpoints
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+              slidesPerView: 2.1
+            },
+            480: {
+              slidesPerView: 2.1
+            },
+            768: {
+              slidesPerView: 3.1
+            },
+            // when window width is >= 640px
+            992: {
+              slidesPerView: 4
+            }
+          },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+        }
+    });
+
+    const swiper4 = new Swiper('.model-slide-men', {
+        // Default parameters
+        loop: false,
+        slidesPerView: 4,
+        spaceBetween: 10,
+        // Responsive breakpoints
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+              slidesPerView: 2.1
+            },
+            480: {
+              slidesPerView: 2.1
+            },
+            768: {
+              slidesPerView: 3.1
+            },
+            // when window width is >= 640px
+            992: {
+              slidesPerView: 4
+            }
+          },
+        navigation: {
+            nextEl: '.swiper-button-next2',
+            prevEl: '.swiper-button-prev2'
+        }
+    });
+
+    const swiper5 = new Swiper('.model-termo', {
+        // Default parameters
+        loop: false,
+        slidesPerView: 4,
+        spaceBetween: 10,
+        // Responsive breakpoints
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 2.1
+          },
+          480: {
+            slidesPerView: 2.1
+          },
+          768: {
+            slidesPerView: 3.1
+          },
+          // when window width is >= 640px
+          992: {
+            slidesPerView: 4
+          }
+        },
+        navigation: {
+            nextEl: '.swiper-button-next3',
+            prevEl: '.swiper-button-prev3'
+        }
+    });
 
     
 
