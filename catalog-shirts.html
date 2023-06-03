@@ -1758,5 +1758,74 @@
 	<script src="js/slick.min.js"></script>
 	<script src="js/swiper-bundle.min.js"></script>
 	<script src="js/script.js"></script>
+
+	<script>
+		$(document).ready(function () {
+			var $window = $(window);
+			var $sidebar = $(".catalog-filter");
+			var $sidebarHeight = $sidebar.innerHeight();
+			var $footerOffsetTop = $(".footer").offset().top;
+			var $sidebarOffset = $sidebar.offset();
+
+			$window.scroll(function () {
+				if ($window.scrollTop() > $sidebarOffset.top) {
+					$sidebar.addClass("fixed");
+				} else {
+					$sidebar.removeClass("fixed");
+				}
+				if ($window.scrollTop() + $sidebarHeight > $footerOffsetTop) {
+					$sidebar.css({ "top": -($window.scrollTop() + $sidebarHeight - $footerOffsetTop) });
+				} else {
+					$sidebar.css({ "top": "10px", });
+				}
+			});
+		});
+
+
+		$(document).ready(function () {
+			var $window = $(window);
+			var $sidebar = $(".catPro-top");
+			var $sidebarHeight = $sidebar.innerHeight();
+			var $footerOffsetTop = $(".footer").offset().top;
+			var $sidebarOffset = $sidebar.offset();
+
+			$window.scroll(function () {
+				if ($window.scrollTop() > $sidebarOffset.top) {
+					$sidebar.addClass("fixed");
+				} else {
+					$sidebar.removeClass("fixed");
+				}
+				if ($window.scrollTop() + $sidebarHeight > $footerOffsetTop) {
+					$sidebar.css({ "top": -($window.scrollTop() + $sidebarHeight - $footerOffsetTop) });
+				} else {
+					$sidebar.css({ "top": "0", });
+				}
+			});
+		});
+	</script>
+
+
+	<style>
+		.catalog-products {
+			position: relative;
+		}
+
+		.catalog-filter.fixed {
+			position: fixed;
+			width: 306px;
+			z-index: 10;
+			background: #FFFFFF;
+			transition: .3s all ease;
+		}
+
+		.catalog-main .catalog-products .catPro-top.fixed {
+			position: fixed;
+			width: 966px;
+			z-index: 10;
+			background: #FFFFFF;
+			padding: 10px 0;
+			transition: .3s all ease;
+		}
+	</style>
 </body>
 </html>
